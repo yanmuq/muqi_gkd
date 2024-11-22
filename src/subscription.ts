@@ -4,7 +4,7 @@ import categories from './categories';
 import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
-  id: 7100,
+  id: 717,
   name: '九千院的GKD订阅',
   version: 0,
   author: 'jiuqianyuan',
