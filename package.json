@@ -1,5 +1,5 @@
 {
-  "name": "@gkd-kit/subscription-template",
+  "name": "@jiuqianyuan/subscription",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
+    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}",
     "pre-push": "pnpm run check"
   },
   "lint-staged": {
