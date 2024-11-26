@@ -1,10 +1,51 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 19 * * *' # 北京时间凌晨3:20运行（UTC时间为前一天的19:20）
 
 jobs:
-  build_release:
+	check_changes:
     runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check_changes.outputs.has_changes }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get Latest Tag
+        id: get_latest_tag
+        run: |
+          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          echo "Latest tag: $latest_tag"
+          echo "latest_tag=$latest_tag" >> $GITHUB_OUTPUT
+
+      - name: Check for Changes
+        id: check_changes
+        run: |
+          latest_tag=${{ steps.get_latest_tag.outputs.latest_tag }}
+          if [ -z "$latest_tag" ]; then
+            echo "No tags found."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            changes=$(git diff --name-only $latest_tag HEAD -- ./src)
+            if [ -z "$changes" ]; then
+              echo "No changes detected in ./src"
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+            else
+              echo "Changes detected in ./src:"
+              echo "$changes"
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+					
+  build_release:
+		needs: check_changes
+    runs-on: ubuntu-latest
+		if: needs.check_changes.outputs.has_changes == 'true'
     outputs:
       version: ${{ steps.version.outputs.version }}
     steps:
