@@ -16,7 +16,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
           snapshotUrls: 'https://i.gkd.li/i/15981630',
         },
         {
@@ -26,8 +26,7 @@ export default defineGkdApp({
             left: 'width * 0.8833',
             top: 'width * 0.1388',
           },
-          excludeMatches: '[id="com.douban.frodo:id/_ad_image_"][width=1200]',
-          matches: '[id="com.douban.frodo:id/_ad_image_"]',
+          matches: '[id="com.douban.frodo:id/_ad_image_"][width!=1200]',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
@@ -60,7 +59,6 @@ export default defineGkdApp({
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
       fastQuery: true,
       matchTime: 5000,
-      resetMatch: 'activity',
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
       rules: [
         {
@@ -180,6 +178,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.activity.SplashActivity',
           matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
           snapshotUrls: 'https://i.gkd.li/i/12548314',
         },
@@ -224,26 +223,33 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-弹窗广告',
-      desc: '浏览详情时弹窗广告,点击右上角x',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
           name: '腾讯广告-1',
+          fastQuery: true,
           activityIds:
             'com.douban.frodo.subject.structure.activity.MovieActivity',
           matches:
-            'ImageView - FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/13195565',
         },
         {
           key: 1,
           name: '腾讯广告-2',
+          fastQuery: true,
           matches:
-            'ImageView -n FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13296656',
-            'https://i.gkd.li/i/13328126',
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          snapshotUrls: 'https://i.gkd.li/i/13328126',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout[childCount=3] < FrameLayout[childCount=2] +5 FrameLayout[childCount=4] > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/f8b1e031-3ec1-422c-9214-8350195642cd',
+          snapshotUrls: 'https://i.gkd.li/i/13328126',
         },
       ],
     },
@@ -257,6 +263,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: [
+            '.activity.BetaApkDialogActivity',
+            '.activity.SplashActivity',
+          ],
           matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13228832',

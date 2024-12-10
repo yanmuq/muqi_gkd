@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           action: 'clickCenter', // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 clickCenter
@@ -23,28 +24,12 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: 'TextView[text="查看青少年模式"] + TextView[text$="知道了"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12834093',
-            'https://i.gkd.li/i/16445117',
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '局部广告-广场页卡片广告',
-      fastQuery: true,
-      activityIds: 'cn.soulapp.android.component.startup.main.MainActivity',
       rules: [
         {
+          fastQuery: true,
+          activityIds: 'cn.soulapp.android.component.startup.main.MainActivity',
           matches:
             '[id="cn.soulapp.android:id/sl_ad_root"] >n [id="cn.soulapp.android:id/fl_tag_container"]',
           snapshotUrls: 'https://i.gkd.li/i/12838000',
@@ -54,12 +39,13 @@ export default defineGkdApp({
     {
       key: 3,
       name: '评价提示-app评分',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.component.chat.ConversationActivity',
           matches:
             '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
           snapshotUrls: 'https://i.gkd.li/i/13425057',
@@ -74,6 +60,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      activityIds: '.component.startup.main.MainActivity',
       rules: [
         {
           key: 0,
@@ -92,10 +79,16 @@ export default defineGkdApp({
       key: 5,
       name: '通知提示',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="消息通知显示消息内容"] +3 [vid="img_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332334',
+      rules: [
+        {
+          activityIds: '.component.startup.main.MainActivity',
+          matches: '[text="消息通知显示消息内容"] +3 [vid="img_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14332334',
+        },
+      ],
     },
     {
       key: 6,

@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'ImageView[id="com.eco.global.app:id/adview_jump"]',
-      snapshotUrls: 'https://i.gkd.li/i/13538616',
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: 'ImageView[id="com.eco.global.app:id/adview_jump"]',
+          snapshotUrls: 'https://i.gkd.li/i/13538616',
+        },
+      ],
     },
   ],
 });

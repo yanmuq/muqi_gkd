@@ -10,9 +10,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.xiaohu.olevodmobile:id/init_time_text"] + [text="跳过"]', // 这个 app 的开屏广告需要点击倒计时按钮才能跳过
-      snapshotUrls: 'https://i.gkd.li/i/12826256',
+      priorityTime: 10000,
+      rules: [
+        {
+          matches:
+            '@[id="com.xiaohu.olevodmobile:id/init_time_text"] + [text="跳过"]', // 这个 app 的开屏广告需要点击倒计时按钮才能跳过
+          snapshotUrls: 'https://i.gkd.li/i/12826256',
+        },
+      ],
     },
   ],
 });

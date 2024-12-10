@@ -6,21 +6,22 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15376423',
         },
         {
           key: 1,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
           snapshotUrls: 'https://i.gkd.li/i/14406395',
         },
       ],
@@ -28,12 +29,18 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-创作祝福弹窗',
+      desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules: '[id="android:id/content"] >2 [vid="button_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14179064',
+      rules: [
+        {
+          activityIds: '.ImeAppMainActivity',
+          matches: '[id="android:id/content"] >2 [vid="button_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14179064',
+        },
+      ],
     },
     {
       key: 2,

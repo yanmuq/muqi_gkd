@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
@@ -26,6 +27,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
           matches:
             'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
           exampleUrls:
@@ -37,9 +39,12 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
           snapshotUrls: 'https://i.gkd.li/i/12662361',
@@ -57,14 +62,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: 'com.mc10086.cmcc.base.StartPageActivity',
           matches: ['[text*="开启推送通知"]', '[text="取消"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/12662213',
-            'https://i.gkd.li/i/13327880',
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/13327880',
         },
         {
           key: 1,
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
           snapshotUrls: 'https://i.gkd.li/i/13775652',
         },
@@ -132,6 +136,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
           matches:
             '@[id="com.greenpoint.android.mc10086.activity:id/close_img"][desc="关闭"] - RelativeLayout >(2) [text$="好评"]',
           snapshotUrls: 'https://i.gkd.li/i/12662345',

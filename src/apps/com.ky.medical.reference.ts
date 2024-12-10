@@ -11,15 +11,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: '[id="com.ky.medical.reference:id/btn_go"][text^="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/12918049',
     },
     {
       key: 0,
       name: '全屏广告-弹窗广告',
-      activityIds: 'com.ky.medical.reference.promotion.AdDialogActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.ky.medical.reference.promotion.AdDialogActivity',
           matches: '[id="com.ky.medical.reference:id/icClose"]',
           snapshotUrls: 'https://i.gkd.li/i/12840924',
         },

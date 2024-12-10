@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           action: 'clickCenter',
@@ -21,7 +22,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-[您是否年满 18 岁？]弹窗',
+      name: '其他-[您是否年满 18 岁？]弹窗',
       desc: '点击[是]',
       rules: [
         {

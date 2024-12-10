@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           fastQuery: true,
@@ -28,8 +29,8 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
-          matches:
-            '[id="com.heytap.market:id/tv_titile"][text="发现软件商店新版本"]',
+          activityIds: 'com.heytap.upgrade.ui.UpgradeActivity',
+          matches: '[text="发现软件商店新版本"]',
           snapshotUrls: 'https://i.gkd.li/i/13455965',
         },
       ],

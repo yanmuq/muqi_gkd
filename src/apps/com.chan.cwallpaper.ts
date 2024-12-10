@@ -7,20 +7,28 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[vid="activate_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/14293734',
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: '[vid="activate_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/14293734',
+        },
+      ],
     },
     {
       key: 1,
       name: '全屏广告-会员回馈弹窗',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.chan.cwallpaper.module.main.MainActivity',
           matches: '[vid="ivClose"]',
           exampleUrls:

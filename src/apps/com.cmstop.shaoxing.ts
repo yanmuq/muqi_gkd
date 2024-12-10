@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.cmstop.shaoxing:id/roundProgressBar"]',
-      snapshotUrls: 'https://i.gkd.li/i/13611775',
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: '[id="com.cmstop.shaoxing:id/roundProgressBar"]',
+          snapshotUrls: 'https://i.gkd.li/i/13611775',
+        },
+      ],
     },
   ],
 });

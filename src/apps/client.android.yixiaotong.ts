@@ -11,10 +11,11 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯广告',
+          fastQuery: true,
           activityIds:
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
-            'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/13055837',
         },
         {
@@ -29,11 +30,9 @@ export default defineGkdApp({
         {
           key: 2,
           name: '快手广告-2',
-          activityIds: [],
-          matches: [
-            'ViewGroup[childCount=2] > ImageView + [text="广告"]',
-            'ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView[childCount=0]',
-          ],
+          fastQuery: true,
+          matches:
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13625511',
         },
       ],
@@ -57,14 +56,16 @@ export default defineGkdApp({
         {
           key: 1,
           name: '快手广告',
+          fastQuery: true,
           matches:
-            '[id="client.android.yixiaotong:id/ksad_container"] >n @TextView + View > [text="广告"]',
+            '@TextView[clickable=true][childCount=0][visibleToUser=true] + View > [visibleToUser=true][text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13450887',
         },
         {
           key: 2,
+          fastQuery: true,
           matches:
-            'FrameLayout[childCount=3] > FrameLayout > ImageView[visibleToUser=true]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ad8a1bbf-61b5-4a7e-8e16-5e0092f04b8c',
           snapshotUrls: 'https://i.gkd.li/i/14469848',
@@ -86,19 +87,6 @@ export default defineGkdApp({
           ],
         },
       ],
-    },
-    {
-      key: 3,
-      name: '局部广告-底部卡片广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds:
-        'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
-      rules:
-        '@TextView[clickable=true][text=""] + View [visibleToUser=true][text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
-      snapshotUrls: 'https://i.gkd.li/i/13448963',
     },
   ],
 });

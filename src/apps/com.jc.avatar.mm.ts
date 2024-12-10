@@ -7,10 +7,18 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      activityIds: 'com.jc.avatar.mm.MainActivity',
-      rules:
-        'ImageView -2 FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/13188475',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.jc.avatar.mm.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          snapshotUrls: 'https://i.gkd.li/i/13188475',
+        },
+      ],
     },
   ],
 });

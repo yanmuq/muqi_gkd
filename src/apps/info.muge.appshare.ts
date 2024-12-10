@@ -7,16 +7,16 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
           snapshotUrls: [
             'https://i.gkd.li/i/13842826',
             'https://i.gkd.li/i/13939089',
@@ -25,12 +25,14 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           matches: '[text*="跳过"][visibleToUser=true][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/14553551',
         },
         {
           // 该开屏广告需要点击坐标在跳过按钮下半部分内才能跳过
           key: 2,
+          fastQuery: true,
           position: {
             left: 'width * 0.5',
             top: 'width * 0.6984',
@@ -71,8 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      fastQuery: true,
       name: '功能类-自动签到',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -84,7 +86,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13931265',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches: '[id="info.muge.appshare:id/tvClose"][text="确定"]',
           snapshotUrls: 'https://i.gkd.li/i/13931279',
@@ -141,15 +143,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
-          exampleUrls:
-            'https://m.gkd.li/57941037/13a69193-a276-4115-97dd-bd7a4b49fbee',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15209619',
-            'https://i.gkd.li/i/15211765',
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          exampleUrls: 'https://e.gkd.li/f89eea71-55f0-4c27-a4b0-79ac5296becd',
+          snapshotUrls: 'https://i.gkd.li/i/15209619',
         },
         {
           key: 2,
@@ -164,15 +163,25 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15282994',
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.view.main.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          exampleUrls: 'https://e.gkd.li/b4d9d653-a4ad-4e4f-a8f5-30b1485547b5',
+          snapshotUrls: 'https://i.gkd.li/i/15211765',
+        },
       ],
     },
     {
       key: 5,
       name: '通知提示-公告弹窗',
       desc: '点击[收到]',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           activityIds: 'info.muge.appshare.view.main.MainActivity',

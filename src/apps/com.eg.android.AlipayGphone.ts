@@ -9,13 +9,6 @@ export default defineGkdApp({
       name: '全屏广告-关闭花呗升级弹窗',
       rules: [
         {
-          key: 0,
-          activityIds:
-            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
-          matches: 'View[childCount=3] > @Image - View[text="花呗服务升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/12737055',
-        },
-        {
           key: 1,
           fastQuery: true,
           activityIds: [
@@ -52,9 +45,13 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
-      rules: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
-      snapshotUrls: 'https://i.gkd.li/i/12792688',
+      rules: [
+        {
+          activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
+          matches: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
+          snapshotUrls: 'https://i.gkd.li/i/12792688',
+        },
+      ],
     },
     {
       key: 2,
@@ -100,7 +97,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[text="立即更新" || text="马上体验"] <n * > [text*="稍后"]',
+          activityIds: [
+            'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage',
+            '.AlipayLogin',
+          ],
+          matches: [
+            '[text="立即更新" || text="马上体验"]',
+            '[text^="稍后"][text.length=4]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13327095',
             'https://i.gkd.li/i/15010554',
@@ -108,6 +112,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: [
+            'com.alipay.mobile.about.ui.AboutAlipayActivity',
+            '.AlipayLogin',
+          ],
           matches:
             '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
           snapshotUrls: [
@@ -117,6 +125,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          activityIds: '.AlipayLogin',
           matches:
             '[text="立即升级最新版支付宝客户端"] < LinearLayout + [id="com.alipay.mobile.advertisement:id/announcementview_righticon"]',
           snapshotUrls: 'https://i.gkd.li/i/13490797',
@@ -169,23 +178,44 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[id="com.alipay.android.app:id/rl_nav_bar"] > [id="com.alipay.android.app:id/nav_right_textview"]',
-          snapshotUrls: 'https://i.gkd.li/i/14008852',
+          activityIds: [
+            'com.alipay.android.msp.ui.views.MspContainerActivity',
+            'com.alipay.android.phone.businesscommon.ucdp.nfc.activity.NResPageActivity',
+          ],
+          matches: [
+            '[text="支付成功" || text="充值成功" || text="提交成功"]',
+            '[text="完成"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14008852',
+            'https://i.gkd.li/i/16328809',
+            'https://i.gkd.li/i/17503266',
+            'https://i.gkd.li/i/17686972',
+          ],
         },
       ],
     },
     {
       key: 13,
-      name: '全屏广告-领新年红包弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击X',
       rules: [
         {
+          key: 0,
           activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
           matches:
             'RelativeLayout[childCount=2][desc="全屏广告"] ImageView[desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/14034152',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches:
+            'WebView > View > View > View > View > @TextView[clickable=true][visibleToUser=true][text=""] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
+          exampleUrls: 'https://e.gkd.li/ebbd606a-0e21-4fc5-b0c3-49e4d87d065c',
+          snapshotUrls: 'https://i.gkd.li/i/16812751',
         },
       ],
     },
@@ -245,12 +275,13 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: '@[checked=true] < * - [text$="免密支付"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1e3a5f01-c42b-4d41-9d7d-21ff96c0075f',
+          matches:
+            '@[checked=true] < FrameLayout - [text*="免密"][text$="支付"]',
+          exampleUrls: 'https://e.gkd.li/7c789099-9b6f-40a2-bc3b-c73b30891cf0',
           snapshotUrls: [
             'https://i.gkd.li/i/14630824', // 关闭前
             'https://i.gkd.li/i/14630825', // 关闭后
+            'https://i.gkd.li/i/17107841',
           ],
         },
       ],
@@ -282,8 +313,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '功能类-[0元下单权益]弹窗',
-      desc: '点击关闭',
+      name: '全屏广告-[0元下单权益]弹窗',
+      desc: '支付完成后出现',
       rules: [
         {
           fastQuery: true,
@@ -304,6 +335,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          matchRoot: true,
+          forcedTime: 10000,
           activityIds: [
             'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
@@ -361,6 +394,25 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/1b788a34-68f6-43c0-8be4-e13cb8221852',
           snapshotUrls: 'https://i.gkd.li/i/16106615',
+        },
+      ],
+    },
+    {
+      key: 24,
+      name: '开屏广告-小程序开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$XRiverLite1',
+          matches:
+            '@View[id=null][text=null][childCount=0][visibleToUser=true] < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <7 ViewGroup <2 ViewGroup < ViewGroup < LinearLayout < RelativeLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/a243e31f-f1b5-4689-8d1a-c53250be651e',
+          snapshotUrls: 'https://i.gkd.li/i/17141999',
         },
       ],
     },

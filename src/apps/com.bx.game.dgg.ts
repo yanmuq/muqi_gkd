@@ -28,14 +28,15 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.bx.game.dgg.MainActivity',
           matches:
-            'ImageView < @ViewGroup[clickable=true] < ViewGroup +2 * > [text="广告"]',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15362927',
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: 'com.bx.game.dgg.MainActivity',
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/15400143',
         },
       ],
@@ -44,13 +45,15 @@ export default defineGkdApp({
       key: 2,
       name: '通知提示-[温馨提示]弹窗',
       desc: '点击[我知道了]',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.bx.game.dgg.MainActivity',
-          matches: '[desc="我知道了"]',
+          matches:
+            '@Button[desc="我知道了"][visibleToUser=true] < View <2 View < View < View < View < View < FrameLayout < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/8a825661-5595-4577-835c-2a0b2d41bc14',
           snapshotUrls: 'https://i.gkd.li/i/15362930',
