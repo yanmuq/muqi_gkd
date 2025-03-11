@@ -1,6 +1,10 @@
 {
+  id: 'com.android.permissioncontroller',
+  name: '权限控制器',
+  groups: [
+{
   key: 0,
-  name: '权限控制弹窗',
+  name: '权限控制相机弹窗',
   fastQuery: true,
   matchRoot: true,
   actionMaximum: 1,
@@ -20,4 +24,6 @@
       ]
     }
   ]
+}
+]
 }
