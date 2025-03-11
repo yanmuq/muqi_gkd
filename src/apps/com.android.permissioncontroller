@@ -2,28 +2,28 @@
   id: 'com.android.permissioncontroller',
   name: '权限控制器',
   groups: [
-{
-  key: 0,
-  name: '权限控制相机弹窗',
-  fastQuery: true,
-  matchRoot: true,
-  actionMaximum: 1,
-  priorityTime: 10000,
-  order: -10,
-  matchDelay: 300,
-  matchTime: 4000,
-  resetMatch: 'app',
-  rules: [
     {
-      matches: [
-        '[vid="permission_message"][text$="访问相机？"]',
-        '[vid="permission_allow_one_time_button"]'
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/18154250'
+      name: '权限控制弹窗',
+      key: 0,
+      fastQuery: true,
+      matchRoot: true,
+      actionMaximum: 1,
+      priorityTime: 10000,
+      order: -10,
+      matchDelay: 300,
+      matchTime: 4000,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+           '[vid="permission_message"][text$="访问相机？"]',
+           '[vid="permission_allow_one_time_button"]'
+          snapshotUrls: [
+            'https://i.gkd.li/i/18153202',
+            'https://i.gkd.li/i/18154250'
+          ]
+        }
       ]
     }
   ]
-}
-]
 }
