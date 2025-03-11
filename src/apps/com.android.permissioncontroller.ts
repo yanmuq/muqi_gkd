@@ -4,7 +4,7 @@ export default defineGkdApp({
   id: 'com.android.permissioncontroller',
   name: '权限控制器',
   groups: [{
-      name: '权限控制弹窗',
+      name: '功能类-权限控制弹窗',
       key: 1,
       fastQuery: true,
       matchRoot: true,
