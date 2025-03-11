@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '权限控制器',
   groups: [{
       name: '权限控制弹窗',
-      key: 7,
+      key: 1,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
