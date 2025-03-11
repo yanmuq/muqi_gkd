@@ -23,18 +23,19 @@ export default defineGkdApp({
         },
       ],
     },
-     {
+    {
       key: 3,
       name: '全屏广告-付款后信用卡广告',
       desc: '2025-03-11由审查工具生成',
       fastQuery: true,
       matchTime: 5000,
-      resetMatch: 'app',// 规则因匹配时间到达而休眠后，重新打开应用时才会唤醒
-      actionDelay: 100,// 匹配后，延时 100 毫秒再执行对应操作
+      resetMatch: 'app', // 规则因匹配时间到达而休眠后，重新打开应用时才会唤醒
+      actionDelay: 100, // 匹配后，延时 100 毫秒再执行对应操作
       rules: [
         {
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
-          matches: '@android.view.ViewGroup + android.widget.TextView[text^="申卡限时"]',
+          matches:
+            '@android.view.ViewGroup + android.widget.TextView[text^="申卡限时"]',
           snapshotUrls: 'https://i.gkd.li/i/19188519',
         },
       ],
