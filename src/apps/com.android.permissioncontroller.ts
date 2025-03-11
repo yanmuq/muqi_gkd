@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '权限控制器',
   groups: [{
       name: '权限控制弹窗',
-      key: 0,
+      key: 7,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
@@ -16,12 +16,14 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: 
+          matches: [
            '[vid="permission_message"][text$="访问相机？"]',
-           '[vid="permission_allow_one_time_button"]'
-          snapshotUrls: 
+           '[vid="permission_allow_one_time_button"]',
+          ],
+          snapshotUrls: [
             'https://i.gkd.li/i/18153202',
-            'https://i.gkd.li/i/18154250'
+            'https://i.gkd.li/i/18154250',
+          ],          
         },
       ],
     },
