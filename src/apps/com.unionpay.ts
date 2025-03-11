@@ -25,7 +25,7 @@ export default defineGkdApp({
     },
      {
       key: 3,
-      name: '[付款后信用卡广告]',
+      name: '全屏广告-付款后信用卡广告',
       desc: '2025-03-11由审查工具生成',
       fastQuery: true,
       matchTime: 5000,
