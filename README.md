@@ -99,7 +99,7 @@ https://raw.githubusercontent.com/username/subscription/main/dist/gkd.json5
 
 https://github.com/用户名/仓库名/blob/main/dist/gkd.json5
 
-替换为
+raw.githubusercontent.com替换github.com字段，删除/blob
 
 https://raw.githubusercontent.com/用户名/仓库名/main/dist/gkd.json5
 即为订阅连接
