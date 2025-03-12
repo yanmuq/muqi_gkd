@@ -5,11 +5,11 @@ import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
   id: 808,
-  name: '九千院的GKD订阅',
+  name: '言木七的GKD订阅',
   version: 0,
-  author: 'jiuqianyuan',
+  author: 'yanmuqi',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/jiuqianyuan/GKD_subscription',
+  supportUri: 'https://github.com/yanmuq/GKD_subscription',
   categories,
   globalGroups,
   apps: await batchImportApps(`${import.meta.dirname}/apps`),
