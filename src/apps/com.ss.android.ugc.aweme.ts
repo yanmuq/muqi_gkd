@@ -341,7 +341,7 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '权限提示-请求访问通讯录弹窗',
+      name: '权限请求-请求访问通讯录弹窗',
       desc: '点击[拒绝]',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -387,7 +387,7 @@ export default defineGkdApp({
     },
     {
       key: 21,
-      name: '定位提示',
+      name: '权限请求',
       desc: '直接关闭所有类似形状窗口',
       fastQuery: true,
       matchTime: 10000,

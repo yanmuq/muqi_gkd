@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
+      matchRoot: true,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -62,7 +63,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '定位提示',
+      name: '权限请求',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

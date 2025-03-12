@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-权限不足弹窗',
+      name: '权限请求-权限不足弹窗',
       desc: '点击取消',
       fastQuery: true,
       actionMaximum: 1,

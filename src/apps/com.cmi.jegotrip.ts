@@ -21,7 +21,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '定位提示',
+      name: '权限请求',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -39,7 +39,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-权限申请弹窗',
+      name: '权限请求-权限申请弹窗',
       desc: '点击[取消]',
       fastQuery: true,
       actionMaximum: 1,

@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '定位提示',
+      name: '权限请求',
       desc: '点击"暂不"',
       fastQuery: true,
       matchTime: 10000,
@@ -24,7 +24,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-请求位置、存储权限',
+      name: '权限请求-请求位置、存储权限',
       desc: '点击"我知道了"',
       fastQuery: true,
       matchTime: 10000,

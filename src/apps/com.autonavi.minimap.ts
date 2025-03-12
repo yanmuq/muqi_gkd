@@ -189,7 +189,7 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '权限提示-授权蓝牙',
+      name: '权限请求-授权蓝牙',
       desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,

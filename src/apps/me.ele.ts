@@ -177,7 +177,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '定位提示',
+      name: '权限请求',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,

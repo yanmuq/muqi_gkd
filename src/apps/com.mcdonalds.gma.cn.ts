@@ -71,7 +71,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '权限提示-设备信息权限',
+      name: '权限请求-设备信息权限',
       desc: '点击[不允许]',
       fastQuery: true,
       resetMatch: 'app',

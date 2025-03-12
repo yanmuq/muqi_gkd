@@ -19,7 +19,7 @@ export default defineGkdCategories([
   {
     enable: false,
     key: 3,
-    name: '定位提示',
+    name: '权限请求',
   },
   {
     enable: false,

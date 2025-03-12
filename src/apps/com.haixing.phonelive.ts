@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示-]权限授权]弹窗',
+      name: '权限请求-]权限授权]弹窗',
       desc: '点击取消',
       matchTime: 10000,
       actionMaximum: 1,

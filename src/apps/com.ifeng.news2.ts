@@ -69,7 +69,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '定位提示',
+      name: '权限请求',
       desc: '点击取消',
       matchTime: 10000,
       actionMaximum: 1,

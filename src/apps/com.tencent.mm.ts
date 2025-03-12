@@ -551,7 +551,7 @@ export default defineGkdApp({
     },
     {
       key: 32,
-      name: '权限提示-权限申请弹窗',
+      name: '权限请求-权限申请弹窗',
       desc: '点击取消',
       matchTime: 10000,
       actionMaximum: 1,

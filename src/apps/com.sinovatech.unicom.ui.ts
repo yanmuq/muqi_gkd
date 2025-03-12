@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限提示',
+      name: '权限请求',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
