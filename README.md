@@ -96,8 +96,11 @@ pnpm install --registry=https://registry.npmmirror.com
 https://raw.githubusercontent.com/username/subscription/main/dist/gkd.json5
 ```
 打开仓库/dist/gkd.json5,复制地址栏地址：
+
 https://github.com/用户名/仓库名/blob/main/dist/gkd.json5
+
 替换为
+
 https://raw.githubusercontent.com/用户名/仓库名/main/dist/gkd.json5
 即为订阅连接
 ## 镜像加速
