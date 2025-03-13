@@ -6,6 +6,10 @@ const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
+  //'me.zhanghai.android.files', // 质感文件
+  //'com.xjcheng.musictageditor', // 音乐标签
+  //'com.ktls.fileinfo', // 存储空间清理
+  //'com.magicalstory.videos', // 奇妙影视
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
@@ -18,7 +22,6 @@ export const blackListAppIDs: string[] = [
   'com.heyanle.easybangumi4', // 纯纯看番
   'com.perol.pixez', // PixEz
   'com.perol.play.pixez', // PixEz Google Play版
-  'com.magicalstory.videos', // 奇妙影视
   'com.magicalstory.installer', // 奇妙安装程序
   'com.guozhigq.pilipala', // PiliPala
   'com.salt.music', // Salt Player
@@ -27,10 +30,7 @@ export const blackListAppIDs: string[] = [
   'com.yenaly.han1meviewer', // Han1meViewer
   'ru.zdevs.zarchiver', // ZArchiver
   'ru.zdevs.zarchiver.pro', // ZArchiver Pro
-  'me.zhanghai.android.files', // 质感文件
-  'com.xjcheng.musictageditor', // 音乐标签
   'com.lalilu.lmusic', // LMusic
-  'com.ktls.fileinfo', // 存储空间清理
   'idm.internet.download.manager', // 1DM
   'idm.internet.download.manager.plus', // 1DM+
   'com.mxtech.videoplayer', // MX播放器
