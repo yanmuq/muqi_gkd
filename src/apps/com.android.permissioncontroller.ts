@@ -5,14 +5,14 @@ export default defineGkdApp({
   name: '权限控制器',
   groups: [
     {
-      name: '功能类-权限控制弹窗',
+      name: '功能类-相机允许本次',
       key: 1,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
       priorityTime: 8000,
       order: -10,
-      matchDelay: 300,
+      matchDelay: 400,
       matchTime: 3000,
       resetMatch: 'app',
       rules: [
