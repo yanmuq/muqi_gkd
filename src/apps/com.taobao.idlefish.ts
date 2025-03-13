@@ -22,7 +22,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限请求-手机信息权限',
+      name: '权限类-手机信息权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

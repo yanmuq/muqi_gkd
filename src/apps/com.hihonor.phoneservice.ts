@@ -23,7 +23,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限请求',
+      name: '权限类',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

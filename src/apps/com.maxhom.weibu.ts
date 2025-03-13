@@ -70,7 +70,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限请求',
+      name: '权限类',
       desc: '自动点击取消',
       fastQuery: true,
       actionMaximum: 1,

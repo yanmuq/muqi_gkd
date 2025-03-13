@@ -22,7 +22,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限请求-请求开启定位权限弹窗',
+      name: '权限类-请求开启定位权限弹窗',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

@@ -28,7 +28,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限请求-通知/链接蓝牙附件设备',
+      name: '权限类-通知/链接蓝牙附件设备',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

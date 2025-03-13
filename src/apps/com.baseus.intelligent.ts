@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '权限请求-定位请求',
+      name: '权限类-定位请求',
       desc: '点击取消-点击取消',
       fastQuery: true,
       actionMaximum: 1,

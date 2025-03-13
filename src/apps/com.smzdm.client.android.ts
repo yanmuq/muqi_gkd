@@ -37,7 +37,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限请求-请求读取剪贴板权限弹窗',
+      name: '权限类-请求读取剪贴板权限弹窗',
       desc: '点击暂不允许',
       fastQuery: true,
       matchTime: 10000,
