@@ -20,6 +20,7 @@ export default defineGkdCategories([
     enable: false,
     key: 3,
     name: '权限请求',
+    // 权限请求/申请弹窗
   },
   {
     enable: false,
@@ -31,12 +32,11 @@ export default defineGkdCategories([
     key: 5,
     name: '青少年模式',
   },
-  {
-    enable: false,
-    key: 6,
-    name: '权限提示',
-    // 其它权限请求
-  },
+  //{
+  //  enable: false,
+  //  key: 6,
+  //  name: '权限提示',
+  //},
   {
     enable: false,
     key: 7,
