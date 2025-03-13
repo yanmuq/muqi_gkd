@@ -19,7 +19,7 @@ export default defineGkdCategories([
   {
     enable: false,
     key: 3,
-    name: '权限请求',
+    name: '权限类',
     // 权限请求/申请弹窗
   },
   {
