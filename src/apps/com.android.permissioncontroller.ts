@@ -28,5 +28,30 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      name: '功能类-位置允许本次',
+      key: 2,
+      fastQuery: true,
+      matchRoot: true,
+      actionMaximum: 1,
+      priorityTime: 8000,
+      order: -10,
+      matchDelay: 1000,
+      matchTime: 3000,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+            '[vid="permission_message"][text$="位置信息？"]',
+            '[vid="permission_allow_one_time_button"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/c2343f5d-459a-45e5-aefc-3a917bb6c693',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19408178',
+            
+          ],
+        },
+      ],
+    },
   ],
 });
