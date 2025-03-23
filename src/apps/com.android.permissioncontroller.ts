@@ -46,10 +46,7 @@ export default defineGkdApp({
             '[vid="permission_allow_one_time_button"]',
           ],
           exampleUrls: 'https://e.gkd.li/c2343f5d-459a-45e5-aefc-3a917bb6c693',
-          snapshotUrls: [
-            'https://i.gkd.li/i/19408178',
-            
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/19408178'],
         },
       ],
     },
