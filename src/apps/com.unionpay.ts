@@ -36,7 +36,8 @@ export default defineGkdApp({
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
           matches:
             '@android.view.ViewGroup + android.widget.TextView[text^="申卡限时"]',
-          snapshotUrls: 'https://i.gkd.li/i/19188519',
+          snapshotUrls: 'https://i.gkd.li/i/19408456',
+          exampleUrls: 'https://e.gkd.li/821e2393-3a10-4061-8fec-e6866e729bf7',
         },
       ],
     },
