@@ -6,10 +6,10 @@ export const UPDATE_PROMPT_ORDER = -9; // 更新提示
 export const YOUTH_MODE_ORDER = -8; // 青少年模式
 
 export default defineGkdGlobalGroups([
-  {
-    },
-  {
-   },
-  {
-    },
+ // {
+  //  },
+  //{
+  // },
+  //{
+  //  },
 ]);
