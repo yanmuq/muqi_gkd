@@ -125,6 +125,6 @@ export default defineGkdApp({
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
       snapshotUrls: 'https://i.gkd.li/i/12650071',
-    },    
+    },
   ],
 });
