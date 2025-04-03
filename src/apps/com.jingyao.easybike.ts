@@ -23,7 +23,6 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-购卡弹窗',
       desc: '点击仅付费',
-      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -52,21 +51,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13228735',
             'https://i.gkd.li/i/13402675',
           ],
-        },
-      ],
-    },
-    {
-      key: 9,
-      name: '权限类',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
-          matches: ['[text="系统定位服务已关闭"]', '[text="取消"]'],
-          snapshotUrls: 'https://i.gkd.li/i/13228677',
         },
       ],
     },

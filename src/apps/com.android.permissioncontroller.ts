@@ -12,7 +12,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       priorityTime: 8000,
       order: -10,
-      matchDelay: 400,
+      matchDelay: 100,
       matchTime: 3000,
       resetMatch: 'app',
       rules: [
