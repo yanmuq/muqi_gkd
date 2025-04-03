@@ -125,20 +125,6 @@ export default defineGkdApp({
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
       snapshotUrls: 'https://i.gkd.li/i/12650071',
-    },
-    {
-      key: 15,
-      name: '其他-新人教学弹窗',
-      desc: '点击跳过',
-      fastQuery: true,
-      rules: [
-        {
-          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-          matches:
-            '@View[text="跳过"] <2 View <2 View <<n FrameLayout[id="com.jingyao.easybike:id/h5_pc_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/13837543',
-        },
-      ],
-    },
+    },    
   ],
 });
