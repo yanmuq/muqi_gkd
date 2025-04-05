@@ -53,7 +53,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示',
+      name: '全屏广告',
       desc: '请求推送通知弹窗，点击取消',
       fastQuery: true,
       matchTime: 10000,

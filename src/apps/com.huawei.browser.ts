@@ -22,7 +22,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '通知提示',
+      name: '全屏广告',
       desc: '关闭资讯通知后，总是弹窗让打开',
       rules: [
         {

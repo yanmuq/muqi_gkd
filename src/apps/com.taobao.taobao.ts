@@ -82,7 +82,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '通知提示',
+      name: '全屏广告',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,

@@ -2,13 +2,14 @@ import { defineGkdCategories } from '@gkd-kit/define';
 
 export default defineGkdCategories([
   {
+    enable: false,
     key: 0,
     name: '开屏广告',
   },
   {
     enable: false,
     key: 1,
-    name: '通知提示',
+    name: '全屏广告',
     // 推送通知类
   },
   {
@@ -17,7 +18,7 @@ export default defineGkdCategories([
     name: '更新提示',
   },
   {
-    enable: false,
+    enable: true,
     key: 3,
     name: '权限申请',
     // 权限请求/申请弹窗
@@ -32,11 +33,6 @@ export default defineGkdCategories([
     key: 5,
     name: '青少年模式',
   },
-  //{
-  //  enable: false,
-  //  key: 6,
-  //  name: '权限提示',
-  //},
   {
     enable: false,
     key: 7,

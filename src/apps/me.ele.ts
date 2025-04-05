@@ -199,7 +199,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '通知提示-获取订单信息通知',
+      name: '全屏广告-获取订单信息通知',
       desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,

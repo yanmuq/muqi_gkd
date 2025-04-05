@@ -167,7 +167,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '通知提示',
+      name: '全屏广告',
       desc: '点击"Not now"',
       fastQuery: true,
       matchTime: 10000,

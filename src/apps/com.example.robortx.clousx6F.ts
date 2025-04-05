@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-公告弹窗',
+      name: '全屏广告-公告弹窗',
       desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,

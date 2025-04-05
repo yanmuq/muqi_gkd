@@ -27,14 +27,14 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示',
+      name: '全屏广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: '.business.main.MainTabActivity',
-          matches: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
+          matches: '[text*="开启全屏广告"] +2 LinearLayout > [text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/12715719',
         },
       ],
