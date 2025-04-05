@@ -36,7 +36,7 @@ export default defineGkdCategories([
   {
     enable: false,
     key: 7,
-    name: '全屏广告',
+    name: '全屏广1告',
     // 不关闭广告就无法进行其它操作的广告弹窗, 它阻碍用户操作
     // 一般是刚进入APP时显示的全屏弹窗
   },
