@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
     key: 3,
-    name: '权限类-存储权限弹窗',
+    name: '全屏广告-存储权限弹窗',
     fastQuery: true,
     matchRoot: true,
     actionMaximum: 1,
