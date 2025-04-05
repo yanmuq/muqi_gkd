@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       name: '权限申请-相机允许本次',
-      key: 1,
+      key: 0,
+      enable: true,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
@@ -30,7 +31,8 @@ export default defineGkdApp({
     },
     {
       name: '权限申请-位置允许本次',
-      key: 2,
+      key: 1,
+      enable: true,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
