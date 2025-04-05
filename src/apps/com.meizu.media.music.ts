@@ -1,24 +1,30 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-    key: 3,
-    name: '全屏广告-存储权限弹窗',
-    fastQuery: true,
-    matchRoot: true,
-    actionMaximum: 1,
-    priorityTime: 5000,
-    order: -10,
-    matchDelay: 10,
-    matchTime: 5000,
-    resetMatch: 'app',
-    rules: [
-      {
-        matches: [
-          '[vid="tv_content"][text$="存储空间)权限"]',
-          '[vid="btn_negative"]'
+    id: 'com.meizu.media.music',
+  name: 'QQ音乐flyme版',
+  groups: [
+    {
+        key: 3,
+        name: '全屏广告-存储权限弹窗',
+        fastQuery: true,
+        matchRoot: true,
+        actionMaximum: 1,
+        priorityTime: 5000,
+        order: -10,
+        matchDelay: 10,
+        matchTime: 5000,
+        resetMatch: 'app',
+        rules: [
+          {
+            matches: [
+              '[vid="tv_content"][text$="存储空间)权限"]',
+              '[vid="btn_negative"]'
+            ],
+            snapshotUrls: 'https://i.gkd.li/i/18945676',
+            exampleUrls: 'https://e.gkd.li/158a00b8-48fe-4556-a844-02e3d8800f47',
+          }
         ],
-        snapshotUrls: 'https://i.gkd.li/i/18945676',
-        exampleUrls: 'https://e.gkd.li/158a00b8-48fe-4556-a844-02e3d8800f47',
-      }
-    ]
+    },
+  ],
   });
