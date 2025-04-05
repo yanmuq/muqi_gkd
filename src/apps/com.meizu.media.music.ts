@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '全屏广告-存储权限弹窗',
+      name: '权限类-存储权限弹窗',
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
