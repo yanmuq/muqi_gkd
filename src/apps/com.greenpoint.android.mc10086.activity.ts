@@ -76,7 +76,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '权限类-请求获取剪贴板权限弹窗',
+      name: '权限申请-请求获取剪贴板权限弹窗',
       desc: '请求获取剪贴板权限弹窗，点击不允许',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -145,7 +145,7 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '权限类-通讯录权限申请弹窗',
+      name: '权限申请-通讯录权限申请弹窗',
       desc: '点击取消',
       fastQuery: true,
       matchTime: 10000,

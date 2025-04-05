@@ -159,7 +159,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '权限类',
+      name: '权限申请',
       desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
       actionMaximum: 1,
       resetMatch: 'app',

@@ -63,7 +63,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限类',
+      name: '权限申请',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

@@ -177,7 +177,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限类',
+      name: '权限申请',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
