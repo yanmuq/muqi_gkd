@@ -29,7 +29,8 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.hellobike.bundlelibrary.phWeb.PhAgencyActivity',
-          matches: '@TextView[text^="仅支付"] - View > TextView[text^="购买并支付"]',
+          matches:
+            '@TextView[text^="仅支付"] - View > TextView[text^="购买并支付"]',
           snapshotUrls: 'https://i.gkd.li/i/19589975',
         },
       ],
