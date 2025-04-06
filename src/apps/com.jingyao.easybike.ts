@@ -23,12 +23,13 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-购卡弹窗',
       desc: '点击仅付费',
+      matchTime: 5000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.hellobike.bundlelibrary.phWeb.PhAgencyActivity',
-          matches: 'TextView[text^="购买并支付"] < View + TextView[index=5]',
+          matches: '@TextView[text^="仅支付"] - View > TextView[text^="购买并支付"]',
           snapshotUrls: 'https://i.gkd.li/i/19589975',
         },
       ],
