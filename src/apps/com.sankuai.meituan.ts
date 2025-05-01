@@ -3,7 +3,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
   id: 'com.sankuai.meituan',
   name: '美团',
-  groups: [   
+  groups: [
     {
       key: 0,
       name: '功能类-付款后点击完成',
@@ -23,6 +23,5 @@ export default defineGkdApp({
         },
       ],
     },
-    
   ],
 });
