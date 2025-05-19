@@ -31,12 +31,12 @@ export default defineGkdApp({
       matchTime: 5000,
       actionMaximum: 1,
       resetMatch: 'app', // 规则因匹配时间到达而休眠后，重新打开应用时才会唤醒
-      actionDelay: 10, // 匹配后，延时 10 毫秒再执行对应操作
+      //actionDelay: 1, // 匹配后，延时 10 毫秒再执行对应操作
       rules: [
         {
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
           matches:
-            '@android.view.ViewGroup + android.widget.TextView[text^="申卡限时"]',
+            '@android.widget.ImageView < * + TextView[text^="申卡限时"]',
           snapshotUrls: 'https://i.gkd.li/i/19408456',
           exampleUrls: 'https://e.gkd.li/821e2393-3a10-4061-8fec-e6866e729bf7',
         },
@@ -63,31 +63,7 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 10,
-      name: '权限申请-位置',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          activityIds: '.activity.UPActivityMain',
-          matches: '[id="com.unionpay:id/view_locate_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13634882',
-        },
-        {
-          key: 1,
-          activityIds: ['.activity.UPActivityMain', '.base.UPDialog'],
-          matches: ['[text*="访问您的位置信息"]', '[text="不允许"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/12695773',
-            'https://i.gkd.li/i/14209001',
-          ],
-        },
-      ],
-    },
+    
     {
       key: 12,
       name: '全屏广告-开启通知弹窗',
