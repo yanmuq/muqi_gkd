@@ -35,8 +35,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
-          matches:
-            '@android.widget.ImageView < * + TextView[text^="申卡限时"]',
+          matches: '@android.widget.ImageView < * + TextView[text^="申卡限时"]',
           snapshotUrls: 'https://i.gkd.li/i/19408456',
           exampleUrls: 'https://e.gkd.li/821e2393-3a10-4061-8fec-e6866e729bf7',
         },
@@ -63,7 +62,7 @@ export default defineGkdApp({
         },
       ],
     },
-    
+
     {
       key: 12,
       name: '全屏广告-开启通知弹窗',
