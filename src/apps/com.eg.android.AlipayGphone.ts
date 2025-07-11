@@ -40,20 +40,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '权限申请',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
-          matches: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
-          snapshotUrls: 'https://i.gkd.li/i/12792688',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '全屏广告-开启通知弹窗',
       fastQuery: true,
@@ -84,77 +70,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13669620',
             'https://i.gkd.li/i/14944514',
           ],
-        },
-      ],
-    },
-    {
-      key: 3,
-      name: '更新提示-版本更新弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          activityIds: [
-            'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage',
-            '.AlipayLogin',
-          ],
-          matches: [
-            '[text="立即更新" || text="马上体验"]',
-            '[text^="稍后"][text.length=4]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13327095',
-            'https://i.gkd.li/i/15010554',
-          ],
-        },
-        {
-          key: 1,
-          activityIds: [
-            'com.alipay.mobile.about.ui.AboutAlipayActivity',
-            '.AlipayLogin',
-          ],
-          matches:
-            '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13490805',
-            'https://i.gkd.li/i/13580594',
-          ],
-        },
-        {
-          key: 2,
-          activityIds: '.AlipayLogin',
-          matches:
-            '[text="立即升级最新版支付宝客户端"] < LinearLayout + [id="com.alipay.mobile.advertisement:id/announcementview_righticon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13490797',
-        },
-      ],
-    },
-    {
-      key: 4,
-      name: '功能类-设置支付宝小组件',
-      desc: '点击关闭',
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: [
-            '[text="设置支付宝小组件"]',
-            '@[clickable=true] > [text="关闭"]',
-          ],
-          snapshotUrls: 'https://i.gkd.li/i/13327349',
-        },
-        {
-          key: 1,
-          activityIds:
-            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
-          matches:
-            '[text="添加会员小组件"] < View +3 View[childCount=2] > [text="近期不再提醒我"]',
-          exampleUrls: 'https://e.gkd.li/de3df4c8-6ab4-45a0-aec5-0fbdfa75e823',
-          snapshotUrls: 'https://i.gkd.li/i/16427922',
         },
       ],
     },
@@ -238,36 +153,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 16,
-      name: '分段广告-扫码乘车后出现的广告',
-      desc: '点击[展开更多]-点击[对该内容不感兴趣]',
-      fastQuery: true,
-      activityIds:
-        'com.alipay.android.phone.wallet.aptrip.ui.activity.result.ResultPageActivityV2',
-      rules: [
-        {
-          key: 0,
-          name: '点击[展开更多]',
-          matches: '@[desc="展开更多选项"] - * >2 [text="广告"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/d7c12df8-a92e-45be-a462-bef23ca9b5fc',
-          snapshotUrls: 'https://i.gkd.li/i/14546044',
-        },
-        {
-          key: 1,
-          preKeys: [0],
-          name: '点击[对该内容不感兴趣]',
-          matches: '@RelativeLayout[clickable=true] >2 [text$="内容不感兴趣"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/7008e1da-738c-4790-9f12-6a5155d42c47',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14546047',
-            'https://i.gkd.li/i/15209602',
-          ],
-        },
-      ],
-    },
-    {
       key: 17,
       name: '功能类-关闭免密支付开关',
       actionMaximum: 1,
@@ -286,47 +171,7 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 19,
-      name: '分段广告-服务消息页面-卡片广告',
-      desc: '点击[关闭]-点击[不感兴趣]',
-      fastQuery: true,
-      activityIds:
-        'com.alipay.android.phone.messageboxapp.ui.MsgBoxTabActivity',
-      rules: [
-        {
-          key: 0,
-          matches: '@[clickable=true] > [text="广告"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c3e08729-6d97-4a87-bfc3-1e38dd95c384',
-          snapshotUrls: 'https://i.gkd.li/i/14787644',
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          matches: '@[clickable=true] >2 [text="不感兴趣"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/64c8c27d-23de-43b1-a87b-e2107b644eb1',
-          snapshotUrls: 'https://i.gkd.li/i/14787585',
-        },
-      ],
-    },
-    {
-      key: 20,
-      name: '全屏广告-[0元下单权益]弹窗',
-      desc: '支付完成后出现',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3575bbbc-717b-466d-b863-443a15629ef6',
-          snapshotUrls: 'https://i.gkd.li/i/14893122',
-        },
-      ],
-    },
+
     {
       key: 21,
       name: '局部广告-卡片广告',
@@ -381,22 +226,7 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 23,
-      name: '全屏广告-[银行卡还款服务升级]弹窗',
-      desc: '点击[放弃升级，直接付款]',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds:
-            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
-          matches: '@[clickable=true] >2 [text="放弃升级，直接付款"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1b788a34-68f6-43c0-8be4-e13cb8221852',
-          snapshotUrls: 'https://i.gkd.li/i/16106615',
-        },
-      ],
-    },
+    
     {
       key: 24,
       name: '开屏广告-小程序开屏广告',
