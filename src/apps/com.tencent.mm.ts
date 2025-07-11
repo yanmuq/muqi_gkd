@@ -4,7 +4,6 @@ export default defineGkdApp({
   id: 'com.tencent.mm',
   name: '微信',
   groups: [
-
     {
       key: 10,
       name: '开屏广告-微信小程序',
@@ -33,7 +32,7 @@ export default defineGkdApp({
         },
       ],
     },
-    
+
     {
       key: 17,
       name: '青少年模式',
@@ -93,7 +92,7 @@ export default defineGkdApp({
         },
       ],
     },
-    
+
     {
       key: 30,
       name: '全屏广告-文档页面-腾讯文档APP弹窗',

@@ -226,7 +226,7 @@ export default defineGkdApp({
         },
       ],
     },
-    
+
     {
       key: 24,
       name: '开屏广告-小程序开屏广告',

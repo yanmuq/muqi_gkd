@@ -15,9 +15,7 @@ export default defineGkdApp({
             'com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity',
           ],
           matches: ['[id="tv.danmaku.bili:id/button"]', '[text="我知道了"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/21187537',
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/21187537'],
         },
       ],
     },
