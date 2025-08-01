@@ -52,10 +52,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          activityIds:
-            'com.meituan.msc.modules.container.MSCActivity',
-          matches:
-            '[text="仅支付车费"][clickable=false][visibleToUser=true]',
+          activityIds: 'com.meituan.msc.modules.container.MSCActivity',
+          matches: '[text="仅支付车费"][clickable=false][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/21549744',
           exampleUrls: 'https://e.gkd.li/1f4db15c-b109-40ba-bb96-fb756f1ca46b',
         },
