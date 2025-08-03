@@ -15,7 +15,10 @@ export default defineGkdApp({
         {
           activityIds: 'org.chromium.chrome.browser.ChromeTabbedActivity',
           matches: 'ViewGroup > Button[text="不，谢谢"]',
-          snapshotUrls: 'https://i.gkd.li/i/13646187',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13646187',
+            'https://i.gkd.li/i/21564662',
+          ],
         },
       ],
     },
