@@ -28,7 +28,7 @@ export default defineGkdCategories([
   {
     enable: true,
     key: 4,
-    name: '提示类弹窗',true
+    name: '提示类弹窗',
     //弹出的与当前APP自身相关提示类弹窗，如淘宝通知弹窗，QQ音乐提示存储空间权限弹窗
     //进入应用后立即弹出归于此类，
     // 在子页面及长时间后弹出的由于性能消耗大归于功能类，如华为运动的步数通知弹窗
