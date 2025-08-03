@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: 'QQ音乐flyme版',
   groups: [
     {
-      name: '权限申请-存储权限弹窗',
+      name: '提示类弹窗-存储权限弹窗',
       key: 0,
       enable: true,
       fastQuery: true,

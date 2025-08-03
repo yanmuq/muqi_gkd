@@ -6,10 +6,6 @@ const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
-  //'me.zhanghai.android.files', // 质感文件
-  //'com.xjcheng.musictageditor', // 音乐标签
-  //'com.ktls.fileinfo', // 存储空间清理
-  //'com.magicalstory.videos', // 奇妙影视
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
@@ -18,14 +14,11 @@ export const blackListAppIDs: string[] = [
   'com.github.android', // GitHub
   'org.telegram.messenger', // Telegram
   'com.twitter.android', // X(推特)
-  'com.aistra.hail', // 雹
   'com.heyanle.easybangumi4', // 纯纯看番
   'com.perol.pixez', // PixEz
   'com.perol.play.pixez', // PixEz Google Play版
-  'com.magicalstory.installer', // 奇妙安装程序
   'com.guozhigq.pilipala', // PiliPala
   'com.salt.music', // Salt Player
-  'com.xuncorp.qinalt.music', // 青盐云听
   'com.github.wgh136.pica_comic', // Pica Comic
   'com.yenaly.han1meviewer', // Han1meViewer
   'ru.zdevs.zarchiver', // ZArchiver
@@ -39,7 +32,6 @@ export const blackListAppIDs: string[] = [
   'com.x8bit.bitwarden', // Bitwarden
   'org.localsend.localsend_app', // LocalSend
   'moe.shizuku.privileged.api', // Shizuku
-  'com.ktls.automation', // 自动点击工具
   'com.deepl.mobiletranslator', // DeepL
   'com.accessibilitymanager', // 无障碍管理器
   'me.tasy5kg.cutegif', // 小萌GIF
@@ -116,11 +108,9 @@ export const blackListAppIDs: string[] = [
   'moe.minamigo.miuigms', // MIUIGMS
   'mufanc.tools.applock', // AppLock
   'com.gankes.tsbattery', // TSBattery
-  'com.oasisfeng.nevo.xposed', // 女娲石
   'com.reddit.frontpage', // Reddit
   'com.ghostflying.locationreportenabler', // LocationReportEnabler
   'com.zyc.zcontrol', // ZControl
-
   'com.canghai.haoka',
   'com.xy.td',
   'com.bug.hookvip',
@@ -165,8 +155,6 @@ export const blackListAppIDs: string[] = [
   'com.miui.securitymanager',
   'com.google.android.documentsui',
   'com.android.settings',
-  'com.miui.creation',
-  'com.xiaomi.scanner',
   'com.miui.gallery',
   'com.yozo.office',
   'com.miui.video',
