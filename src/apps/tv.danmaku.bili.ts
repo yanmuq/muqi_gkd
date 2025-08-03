@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-青少年弹窗',
+      name: '青少年弹窗',
       desc: '点击[我知道了]',
       rules: [
         {

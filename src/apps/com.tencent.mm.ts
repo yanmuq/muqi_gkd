@@ -35,7 +35,7 @@ export default defineGkdApp({
 
     {
       key: 17,
-      name: '青少年模式',
+      name: '青少年弹窗',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',

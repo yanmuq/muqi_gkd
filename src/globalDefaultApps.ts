@@ -34,7 +34,6 @@ export const blackListAppIDs: string[] = [
   'moe.shizuku.privileged.api', // Shizuku
   'com.deepl.mobiletranslator', // DeepL
   'com.accessibilitymanager', // 无障碍管理器
-  'me.tasy5kg.cutegif', // 小萌GIF
   'com.absinthe.libchecker', // LibChecker
   'com.github.metacubex.clash.meta', // Clash Meta for Android
   'io.github.jd1378.otphelper', // 短信验证码自动复制
@@ -47,8 +46,6 @@ export const blackListAppIDs: string[] = [
   'com.funny.translation', // 译站
   'com.looker.droidify', // Droid-ify
   'app.eleven.com.fastfiletransfer', // 文件闪传
-  'com.idaodan.clean.master', // 雪豹速清
-  'com.samsung.agc.gcam84', // 相机
   'com.wsw.cospa', // 异次元
   'app.mihon', // Mihon
   'com.rosan.installer.x', // installerX
@@ -92,7 +89,6 @@ export const blackListAppIDs: string[] = [
   'com.microsoft.office.onenote', // Microsoft OneNote
   'com.sonkins.tguitar', // Guitar Tuner
   'com.eumlab.android.prometronome', // Pro Metronome
-  'cn.edu.buaa.wxwork', // 智慧北航
   'io.github.muntashirakon.AppManager', // App Manager
   'moe.shizuku.redirectstorage', // 存储空间隔离
   'web1n.stopapp', // 小黑屋
@@ -154,8 +150,6 @@ export const blackListAppIDs: string[] = [
   'com.Twilight.tools',
   'com.miui.securitymanager',
   'com.google.android.documentsui',
-  'com.android.settings',
-  'com.miui.gallery',
   'com.yozo.office',
   'com.miui.video',
   'com.xiaomi.wpslauncher',
@@ -181,9 +175,6 @@ export const blackListAppIDs: string[] = [
   'com.miui.cleanmaster', // 垃圾清理
   'com.miui.compass', // 指南针
   'com.duokan.phone.remotecontroller', // 万能遥控
-  'com.mfashiongallery.emag', // 小米画报
-  'com.miui.thirdappassistant', // 三方应用异常分析
-
   'com.xiaomi.wpslauncher', // WPS Office PC
   'com.xiaomi.cajlauncher', // CAJViewer PC
   'com.mi.car.padapp', // 小米汽车扩展屏
@@ -246,9 +237,6 @@ export const updateBlackListAppIDs = new Set([
 export const yongBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'xxx.pornhub.fuck', // JavDB
-  'com.netease.cloudmusic', // 网易云音乐 全局规则在 https://i.gkd.li/i/14931708 误触
-  'com.zhihu.android', // 知乎 全局规则在 https://i.gkd.li/i/14964990 误触
-  'com.luna.music', // 汽水音乐 全局规则在 https://i.gkd.li/i/15124801 误触
   ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 

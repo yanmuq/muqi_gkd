@@ -20,15 +20,15 @@ export default defineGkdCategories([
     name: '更新提示',
   },
   {
-    enable: false,
+    enable: true,
     key: 3,
     name: '权限申请',
-    // 权限请求/申请系统弹窗，仅系统
+    // 权限请求/申请系统弹窗，仅限系统的
   },
   {
-    enable: false,
+    enable: true,
     key: 4,
-    name: '提示类弹窗',
+    name: '提示类弹窗',true
     //弹出的与当前APP自身相关提示类弹窗，如淘宝通知弹窗，QQ音乐提示存储空间权限弹窗
     //进入应用后立即弹出归于此类，
     // 在子页面及长时间后弹出的由于性能消耗大归于功能类，如华为运动的步数通知弹窗
@@ -36,7 +36,7 @@ export default defineGkdCategories([
   {
     enable: false,
     key: 5,
-    name: '青少年模式',
+    name: '青少年弹窗',
   },
   {
     enable: false,
