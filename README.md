@@ -1,7 +1,48 @@
-# subscription-template
+## 声明
 
-GKD 订阅模板, 此仓库方便您直接构建自己订阅, 点击右上角 [Use this template](https://github.com/new?template_name=subscription-template&template_owner=gkd-kit) 即可使用
+- 本仓库仅供本人学习使用，禁止在国内平台传播
+- ~~随缘~~(很少)更新
 
+## 说明
+
+  本订阅为**附加订阅**，是为了满足其他订阅规则未覆盖到的**个人需求**，因此：
+- 不会添加小众软件及个人用不到的软件
+- 没有全局规则
+- 致力于编写效率最高、误触最低的规则
+- 如有更高效写法,欢迎提交
+- 暂无镜像加速链接，需要VPN才能订阅与更新
+
+## 订阅
+
+复制以下链接到 GKD 即可使用本订阅规则
+
+- npmmirror源（国内镜像，推荐大陆用户使用）
+
+```txt
+
+```
+
+- GitHub源
+
+```txt
+https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/dist/gkd.json5
+```
+## 赞助
+
+如果这个项目对您有帮助，欢迎赞助我，感谢您的支持！
+
+<table>
+  <tr>
+    <td align="center">支付宝</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/65eadb66-69d6-465a-b473-c95900e75d0f" width="300"/>
+    </td>
+  </tr>
+</table>
+
+## 下为构建订阅相关文档，来自于gkd模板
 ## 配置环境
 
 请安装最新版 nodejs 和 pnpm 运行, 以及使用 vscode 打开项目
