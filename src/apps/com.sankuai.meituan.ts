@@ -33,7 +33,8 @@ export default defineGkdApp({
           matchTime: 5000,
           actionMaximum: 2,
           resetMatch: 'app',
-          activityIds: 'com.meituan.android.hybridcashier.HybridCashierActivity',
+          activityIds:
+            'com.meituan.android.hybridcashier.HybridCashierActivity',
           matches: '@[text^="放弃"] <<n [vid="mil_container"]',
           exampleUrls: 'https://e.gkd.li/f45dc954-85bd-4f22-8db7-fb6a9ffc2b0a',
           snapshotUrls: 'https://i.gkd.li/i/21549586',
@@ -49,6 +50,6 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/1f4db15c-b109-40ba-bb96-fb756f1ca46b',
         },
       ],
-    },    
+    },
   ],
 });
