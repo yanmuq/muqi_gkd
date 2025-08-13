@@ -26,6 +26,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-骑行支付弹窗',
+      matchRoot: true,
       rules: [
         {
           key: 1,
