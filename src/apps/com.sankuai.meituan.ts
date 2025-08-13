@@ -48,6 +48,7 @@ export default defineGkdApp({
           matches: '[text="仅支付车费"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/21549744',
           exampleUrls: 'https://e.gkd.li/1f4db15c-b109-40ba-bb96-fb756f1ca46b',
+          //@[text="仅支付车费"] <<n View <<64 [vid="container"]
         },
       ],
     },
