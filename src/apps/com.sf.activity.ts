@@ -15,7 +15,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.sf.activity.MainActivity',
-          matches: '@ViewGroup[visibleToUser=true] < Button + [text="开启消息通知"]',
+          matches:
+            '@ViewGroup[visibleToUser=true] < Button + [text="开启消息通知"]',
           snapshotUrls: 'https://i.gkd.li/i/21797717',
         },
       ],
