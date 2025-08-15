@@ -5,18 +5,14 @@ export default defineGkdApp({
   name: '顺丰速运',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
+      key: 1,
+      name: '[ChangeMe]规则名称-2025-08-15 21:51:19',
+      desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
       rules: [
         {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/53c0a275-e6f7-42b2-b60e-6998685d30c3',
-          snapshotUrls: 'https://i.gkd.li/i/16401925',
+          fastQuery: true,
+          activityIds: 'com.sf.activity.MainActivity',
+          matches: '@ViewGroup[visibleToUser=true] < Button + [text="开启消息通知"]',
         },
       ],
     },
