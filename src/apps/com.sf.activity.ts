@@ -6,13 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '[ChangeMe]规则名称-2025-08-15 21:51:19',
+      name: '权限提示类-通知弹窗',
       desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
+      matchTime: 5000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.sf.activity.MainActivity',
           matches: '@ViewGroup[visibleToUser=true] < Button + [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/21797717',
         },
       ],
     },
