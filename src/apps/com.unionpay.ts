@@ -30,6 +30,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 5000,
       actionMaximum: 1,
+      priorityTime: 1000,
       resetMatch: 'app', // 规则因匹配时间到达而休眠后，重新打开应用时才会唤醒
       //actionDelay: 1, // 匹配后，延时 10 毫秒再执行对应操作
       rules: [

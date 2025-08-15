@@ -9,9 +9,11 @@ export default defineGkdApp({
       name: '开屏广告',
       fastQuery: true,
       matchTime: 10000,
-      actionMaximum: 1,
+      actionMaximum: 2,
       resetMatch: 'app',
       priorityTime: 10000,
+      order: -10,
+      forcedTime: 5000,
       rules: [
         {
           matches:
@@ -101,25 +103,6 @@ export default defineGkdApp({
             //'https://i.gkd.li/i/13446901',
             //'https://i.gkd.li/i/13455424',
             //'https://i.gkd.li/i/15104645',
-          ],
-        },
-      ],
-    },
-    {
-      key: 9,
-      name: '功能类-各级页面添加到首页弹窗',
-      desc: '点击退出',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: [
-            'com.taobao.themis.container.app.TMSActivity',
-            'com.alibaba.triver.container.TriverMainActivity',
-          ],
-          matches: 'TextView[text="去首页"] + TextView[text="退出"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13197553',
-            'https://i.gkd.li/i/13197546',
           ],
         },
       ],

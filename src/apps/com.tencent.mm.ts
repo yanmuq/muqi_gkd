@@ -34,66 +34,6 @@ export default defineGkdApp({
     },
 
     {
-      key: 17,
-      name: '青少年弹窗',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: [
-            'com.tencent.mm.plugin.finder.ui.',
-            'com.tencent.mm.ui.LauncherUI',
-          ],
-          matches: ['[text*="青少年模式"]', '[text="我知道了"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13538145',
-            'https://i.gkd.li/i/13575195',
-            'https://i.gkd.li/i/14735456',
-            'https://i.gkd.li/i/14896723',
-          ],
-        },
-      ],
-    },
-
-    {
-      key: 28,
-      name: '分段广告-订阅号消息-视频推荐',
-      desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
-      activityIds:
-        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
-      rules: [
-        {
-          key: 0,
-          name: '点击[X]',
-          matches:
-            '[desc="订阅号消息"] +3 View >2 [visibleToUser=true] - View >3 ImageView[index=2][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/b777c0b1-f8ed-4712-afd6-2e1a72243475',
-          snapshotUrls: 'https://i.gkd.li/i/14436176',
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          name: '点击[不喜欢此类视频]',
-          matches: '[desc="不喜欢此类视频"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/39e8b378-9b55-4838-92af-b28f04402ca4',
-          snapshotUrls: 'https://i.gkd.li/i/14444654',
-        },
-        {
-          preKeys: 1,
-          key: 2,
-          name: '点击[确定]',
-          matches: '[desc="确定"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/590eb619-9987-4edf-98a8-17146ffeda10',
-          snapshotUrls: 'https://i.gkd.li/i/14436190',
-        },
-      ],
-    },
-
-    {
       key: 30,
       name: '全屏广告-文档页面-腾讯文档APP弹窗',
       desc: '点击关闭',
@@ -135,31 +75,6 @@ export default defineGkdApp({
           key: 2,
           matches: '[desc="确定"]',
           snapshotUrls: 'https://i.gkd.li/i/14549567',
-        },
-      ],
-    },
-    {
-      key: 37,
-      name: '全屏广告-小程序弹窗广告',
-      desc: '点击关闭',
-      matchTime: 20000,
-      // actionMaximum: 1,
-      actionCd: 300, // 有时候需要点击多次
-      actionDelay: 300, // 过早触发有概率无效
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
-          excludeMatches: '[text="跳过"][visibleToUser=true]', // 防止提前触发
-          matches:
-            '@ImageView[visibleToUser=true][childCount=0][text=null] < FrameLayout[childCount=1] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] - FrameLayout >4 [text="广告"]',
-          exampleUrls: 'https://e.gkd.li/d2b12af6-c204-4da7-8553-4765ef8b8c31',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13459614',
-            'https://i.gkd.li/i/16943989',
-            'https://i.gkd.li/i/16920797',
-          ],
-          excludeSnapshotUrls: 'https://i.gkd.li/i/16958795',
         },
       ],
     },
