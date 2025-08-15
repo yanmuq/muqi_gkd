@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '顺丰速运',
   groups: [
     {
-      key: 1,
+      key: 0,
       name: '权限提示类-通知弹窗',
       desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
       matchTime: 5000,
