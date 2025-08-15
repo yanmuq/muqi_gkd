@@ -95,7 +95,7 @@ export default defineGkdApp({
             'com.taobao.tao.welcome.Welcome',
           ],
           matches:
-            '@Image[visibleToUser=true][text!=null] +n [visibleToUser=true][text="去开启"] <<n [id="com.taobao.taobao:id/poplayer_inner_view"]',
+            '[text^="不错过"][text$="通知"] - @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/21789921',
             //'https://i.gkd.li/i/13446901',
