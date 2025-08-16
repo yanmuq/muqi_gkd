@@ -33,7 +33,8 @@ export default defineGkdApp({
           fastQuery: true,
           matchTime: 5000,
           actionMaximum: 2,
-          resetMatch: 'app',
+          resetMatch: 'match',
+          forcedTime: 5000,
           activityIds:
             'com.meituan.android.hybridcashier.HybridCashierActivity',
           matches: '@[text^="放弃"] <<n [vid="mil_container"]',
