@@ -174,7 +174,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '权限申请-悬浮窗权限',
+      name: '其他类-悬浮窗权限',
       desc: '点击[否]',
       fastQuery: true,
       actionMaximum: 1,
