@@ -177,7 +177,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '权限申请',
+      name: '功能类-定位局部提示',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
