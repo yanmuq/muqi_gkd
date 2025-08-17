@@ -8,10 +8,10 @@ export default defineGkdApp({
       key: -1,
       name: '开屏广告',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 5000,
       actionMaximum: 2,
       resetMatch: 'app',
-      priorityTime: 10000,
+      priorityTime: 5000,
       order: -10,
       forcedTime: 5000,
       rules: [
@@ -84,11 +84,13 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '提示类弹窗-开启通知弹窗',
+      name: '提示类-开启通知弹窗',
       desc: '点击关闭',
+      order: -10,
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
+      resetMatch: 'match',
       rules: [
         {
           activityIds: [
@@ -97,7 +99,7 @@ export default defineGkdApp({
             'com.taobao.tao.welcome.Welcome',
           ],
           matches:
-            '[text^="不错过"][text$="通知"] - @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
+            '@Image[visibleToUser=true] + [text^="不错过"][text$="通知"] <<n [vid="poplayer_inner_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/21789921',
             //'https://i.gkd.li/i/13446901',

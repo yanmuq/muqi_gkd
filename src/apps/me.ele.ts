@@ -216,7 +216,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '提示类弹窗-底部调研邀请卡片',
+      name: '提示类-底部调研邀请卡片',
       desc: '点击关闭',
       actionMaximum: 1,
       resetMatch: 'app',

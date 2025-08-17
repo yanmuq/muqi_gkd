@@ -5,16 +5,15 @@ export default defineGkdApp({
   name: 'QQ音乐flyme版',
   groups: [
     {
-      name: '提示类弹窗-存储权限弹窗',
+      name: '提示类-存储权限弹窗',
       key: 0,
-      enable: true,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
+      matchTime: 5000,
       priorityTime: 5000,
       order: -10,
       matchDelay: 10,
-      matchTime: 5000,
       resetMatch: 'app',
       rules: [
         {

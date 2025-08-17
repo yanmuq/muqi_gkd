@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '权限控制器',
   groups: [
     {
-      name: '权限申请-相机允许本次',
+      name: '权限控制-相机允许本次',
       key: 0,
       enable: true,
       fastQuery: true,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '权限申请-位置允许本次',
+      name: '权限控制-位置允许本次',
       key: 1,
       enable: true,
       fastQuery: true,

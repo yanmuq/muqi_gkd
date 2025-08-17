@@ -5,6 +5,7 @@ export default defineGkdCategories([
     enable: false,
     key: 0,
     name: '开屏广告',
+    //进入应用前的广告页面
   },
   {
     enable: false,
@@ -22,16 +23,16 @@ export default defineGkdCategories([
   {
     enable: true,
     key: 3,
-    name: '权限申请',
-    // 权限请求/申请系统弹窗，仅限系统的
+    name: '权限控制',
+    // 权限请求/申请系统弹窗，仅限系统应用
   },
   {
     enable: true,
     key: 4,
-    name: '提示类弹窗',
-    //弹出的与当前APP自身相关提示类弹窗，如淘宝通知弹窗，QQ音乐提示存储空间权限弹窗
-    //进入应用后立即弹出归于此类，
-    // 在子页面及长时间后弹出的由于性能消耗大归于功能类，如华为运动的步数通知弹窗
+    name: '提示类',
+    //弹出的与当前APP自身相关提示类，如淘宝通知弹窗，QQ音乐提示存储空间权限弹窗
+    //全屏广告的细分子类，一般进入应用后立即弹出
+    //在子页面及长时间后弹出的由于性能消耗大归于功能类，如华为运动的步数通知弹窗
   },
   {
     enable: false,
@@ -57,7 +58,7 @@ export default defineGkdCategories([
     name: '功能类',
     // 非广告, 点击某些功能按钮
     // 公告弹窗归此类
-    //性能原因不默认开启的归于此的提示类弹窗
+    //性能原因不默认开启的归于此的提示类
   },
   {
     enable: false,

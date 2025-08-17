@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '提示类弹窗-通知权限弹窗',
+      name: '提示类-通知权限弹窗',
       desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
       matchTime: 5000,
       actionMaximum: 1,
