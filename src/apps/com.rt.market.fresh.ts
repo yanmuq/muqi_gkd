@@ -15,8 +15,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.home.activity.MainActivity',
-          matches: 
-            ['[vid="tv_fm_home_permission_start"]', '[text="开启定位"]'],
+          matches: ['[vid="tv_fm_home_permission_start"]', '[text="开启定位"]'],
           snapshotUrls: ['https://i.gkd.li/i/22227999'],
         },
       ],
