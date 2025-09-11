@@ -22,5 +22,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '全屏广告-评价弹窗',
+      desc: '关闭弹出窗口',
+      matchTime: 5000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      fastQuery: true,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'org.chromium.chrome.browser.ChromeTabbedActivity',
+          matches: 'ImageView[vid="title_bar_dismiss_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/22277907',
+          exampleUrls:'https://e.gkd.li/51c0e6de-cc7a-4d5a-8163-17a141a566fc',
+        },
+      ],
+    },
   ],
 });
