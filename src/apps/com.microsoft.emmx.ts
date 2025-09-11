@@ -36,7 +36,7 @@ export default defineGkdApp({
           activityIds: 'org.chromium.chrome.browser.ChromeTabbedActivity',
           matches: 'ImageView[vid="title_bar_dismiss_button"]',
           snapshotUrls: 'https://i.gkd.li/i/22277907',
-          exampleUrls:'https://e.gkd.li/51c0e6de-cc7a-4d5a-8163-17a141a566fc',
+          exampleUrls: 'https://e.gkd.li/51c0e6de-cc7a-4d5a-8163-17a141a566fc',
         },
       ],
     },
