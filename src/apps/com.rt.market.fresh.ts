@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '提示类',
       desc: '点击[开启定位]',
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 2,
       resetMatch: 'app',
       rules: [
