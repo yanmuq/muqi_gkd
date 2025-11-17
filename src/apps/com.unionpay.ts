@@ -6,20 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '分段广告-支付完成界面卡片广告',
+      name: '功能类-支付完成页点完成',
       fastQuery: true,
+      matchTime: 5000,
+      priorityTime: 1000,
+      actionDelay: 2000, // 匹配后，延时 2 秒再执行对应操作
+      resetMatch: 'match',
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
-          key: 0,
-          matches: '[id="bannerBox"] > @View[clickable=true] > [text="广告"]',
+          matches: '@[text.length=2] < ViewGroup[clickable=false] - [text="支付成功"]',
           snapshotUrls: 'https://i.gkd.li/i/13070564',
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          matches: '[text="关闭广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13070974',
         },
       ],
     },
@@ -31,12 +28,12 @@ export default defineGkdApp({
       matchTime: 5000,
       actionMaximum: 1,
       priorityTime: 1000,
-      resetMatch: 'app', // 规则因匹配时间到达而休眠后，重新打开应用时才会唤醒
-      //actionDelay: 1, // 匹配后，延时 10 毫秒再执行对应操作
+      resetMatch: 'match', // 规则因匹配时间到达而休眠后，重新匹配到activityId才会唤醒
       rules: [
         {
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
-          matches: '@android.widget.ImageView < * + TextView[text^="申卡限时"]',
+          matches: '@android.view.ViewGroup + TextView[text^="申卡限时"]',
+          //matches: '@android.widget.ImageView < * + TextView[text^="申卡限时"]',
           snapshotUrls: 'https://i.gkd.li/i/19408456',
           exampleUrls: 'https://e.gkd.li/821e2393-3a10-4061-8fec-e6866e729bf7',
         },

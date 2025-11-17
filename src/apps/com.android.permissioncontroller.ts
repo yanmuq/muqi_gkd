@@ -52,5 +52,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      name: '权限控制-录音允许本次',
+      key: 2,
+      //enable: true,
+      fastQuery: true,
+      actionMaximum: 2,
+      //matchRoot: true,
+      //priorityTime: 5000,
+      order: -10,
+      matchDelay: 800,
+      matchTime: 3000,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+            '[vid="permission_message"][text$="麦克风？"]',
+            '[text^="允许本次"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/1b303775-da1c-4181-be73-fb830631bdfd',
+          snapshotUrls: 'https://i.gkd.li/i/23588107',
+        },
+      ],
+    },
   ],
 });
