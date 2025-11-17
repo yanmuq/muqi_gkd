@@ -15,7 +15,8 @@ export default defineGkdApp({
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
-          matches: '@[text.length=2] < ViewGroup[clickable=false] - [text="支付成功"]',
+          matches:
+            '@[text.length=2] < ViewGroup[clickable=false] - [text="支付成功"]',
           snapshotUrls: 'https://i.gkd.li/i/13070564',
         },
       ],
