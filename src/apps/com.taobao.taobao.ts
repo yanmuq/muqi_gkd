@@ -111,6 +111,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
+      enable: true,
       name: '更新提示',
       fastQuery: true,
       actionMaximum: 1,
@@ -118,14 +119,13 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: [
+            'com.taobao.tao.welcome.Welcome',
             'com.taobao.android.detail.wrapper.activity.DetailActivity',
             'com.taobao.android.order.bundle.TBOrderListActivity',
           ],
-          matches: '[vid="update_imageview_cancel_v2"]',
+          matches: '@ImageView - [vid="poplayer_native_state_id"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13336760',
-            'https://i.gkd.li/i/13695520',
-            'https://i.gkd.li/i/14899863',
+            'https://i.gkd.li/i/13336760',//无用
           ],
         },
       ],
@@ -189,28 +189,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 16,
-      name: '全屏广告-花呗升级报送征信',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      rules: [
-        {
-          key: 2,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: [
-            '[text*="花呗升级" || text*="花呗服务"]',
-            '@[clickable=true] >n [text="暂不升级，继续付款" || text="关闭"]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13691864',
-            'https://i.gkd.li/i/13628020',
-            'https://i.gkd.li/i/13898735',
-          ],
-        },
-      ],
-    },
-    {
       key: 17,
       name: '全屏广告-抢天降补贴弹窗',
       desc: '点击X',
@@ -220,22 +198,6 @@ export default defineGkdApp({
           activityIds: 'com.taobao.tao.welcome.Welcome',
           matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
           snapshotUrls: 'https://i.gkd.li/i/14060521',
-        },
-      ],
-    },
-    {
-      key: 18,
-      name: '全屏广告-[「0元下单」权益]弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/a35c954d-5162-463c-aee3-b72b9c2d6625',
-          snapshotUrls: 'https://i.gkd.li/i/14155537',
         },
       ],
     },
