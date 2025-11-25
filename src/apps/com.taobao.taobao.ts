@@ -125,7 +125,7 @@ export default defineGkdApp({
           ],
           matches: '@ImageView - [vid="poplayer_native_state_id"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13336760',//无用
+            'https://i.gkd.li/i/13336760', //无用
           ],
         },
       ],
