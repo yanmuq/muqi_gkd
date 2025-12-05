@@ -13,8 +13,7 @@ export default defineGkdApp({
         {
           activityIds:
             'com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity',
-          matches:
-            ['[id="tv.danmaku.bili:id/button"]', '[text="不再提醒"]'],
+          matches: ['[id="tv.danmaku.bili:id/button"]', '[text="不再提醒"]'],
           snapshotUrls: ['https://i.gkd.li/i/23958306'],
           exampleUrls: 'https://e.gkd.li/99565077-80e9-4e4f-98e7-33da742e2afd',
         },
@@ -30,7 +29,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.MainActivityV2',
           matches: ['[id="tv.danmaku.bili:id/title"]', '[text^="完善信息"]'],
-          action: "back",
+          action: 'back',
           snapshotUrls: ['https://i.gkd.li/i/23958344'],
         },
       ],
