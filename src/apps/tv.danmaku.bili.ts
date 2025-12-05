@@ -21,7 +21,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-推荐弹窗',
+      name: '全屏广告-完善信息弹窗',
       desc: '点击[返回]',
       fastQuery: true,
       rules: [
