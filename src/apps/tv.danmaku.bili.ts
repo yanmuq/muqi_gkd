@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: '哔哩哔哩',
   groups: [
     {
+      key: 0,
+      name: '全屏广告-兴趣推荐',
+      desc: '点击[返回]',
+      fastQuery: true,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivityV2',
+          matches: ['[vid="title"]', '[text^="选择兴趣"]'],
+          action: 'back',
+          snapshotUrls: ['https://i.gkd.li/i/23958344'],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '青少年弹窗',
       desc: '点击[不再提醒]',

@@ -13,7 +13,7 @@ export default defineGkdCategories([
     name: '全屏广告',
     // 不关闭广告就无法进行其它操作的广告弹窗, 它阻碍用户操作
     // 一般是刚进入APP时显示的全屏弹窗
-    // 不包含推送通知弹窗类
+    // 包含开启通知
   },
   {
     enable: false,
@@ -24,7 +24,7 @@ export default defineGkdCategories([
     enable: true,
     key: 3,
     name: '权限控制',
-    // 权限请求/申请系统弹窗，仅限系统应用
+    // 权限请求/申请系统弹窗，仅限系统权限控制弹窗
   },
   {
     enable: true,
