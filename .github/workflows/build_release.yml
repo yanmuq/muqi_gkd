@@ -73,9 +73,8 @@ jobs:
         run: |
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
-          git status
           git add .
-          git commit -a -m "chore: v${{steps.version.outputs.version}}"
+          git commit -m "chore: v${{steps.version.outputs.version}}"
         continue-on-error: true
 
       - name: Git push
@@ -97,9 +96,9 @@ jobs:
           body_path: ./dist/CHANGELOG.md
 
       - name: Publish package
+        if: steps.commit.outcome == 'success' && env.NPM_TOKEN != ''
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
