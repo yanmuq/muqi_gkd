@@ -78,6 +78,12 @@ jobs:
           git commit -m "chore: v${{steps.version.outputs.version}}"
         continue-on-error: true
 
+      - name: Pull latest changes
+        if: steps.commit.outcome == 'success'
+        run: |
+          it pull --rebase origin ${{ github.ref_name }}
+
+
       - name: Git push
         if: ${{ steps.commit.outcome == 'success' }}
         uses: ad-m/github-push-action@master
