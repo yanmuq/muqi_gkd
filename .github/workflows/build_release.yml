@@ -81,7 +81,7 @@ jobs:
       - name: Pull latest changes
         if: steps.commit.outcome == 'success'
         run: |
-          it pull --rebase origin ${{ github.ref_name }}
+          git pull --rebase origin ${{ github.ref_name }}
 
 
       - name: Git push
