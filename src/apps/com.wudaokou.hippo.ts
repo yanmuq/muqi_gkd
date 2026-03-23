@@ -19,7 +19,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-评论区广告',
+      name: '全屏广告-开启通知',
       rules: [
         {
           fastQuery: true,
