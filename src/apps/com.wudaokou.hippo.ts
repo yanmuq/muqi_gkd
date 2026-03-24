@@ -6,7 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-更新弹窗',
+      name: '全屏弹窗-更新弹窗',
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
@@ -19,7 +21,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-开启通知',
+      name: '全屏弹窗-开启通知',
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

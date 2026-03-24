@@ -6,12 +6,13 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-兴趣推荐',
+      name: '全屏弹窗-兴趣推荐',
       desc: '点击[返回]',
       fastQuery: true,
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: '.MainActivityV2',
           matches: ['[vid="title"]', '[text^="选择兴趣"]'],
           action: 'back',
@@ -36,9 +37,11 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-完善信息弹窗',
+      name: '全屏弹窗-完善信息弹窗',
       desc: '点击[返回]',
       fastQuery: true,
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

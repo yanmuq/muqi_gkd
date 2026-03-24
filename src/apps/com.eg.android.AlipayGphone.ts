@@ -41,7 +41,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '提示类-开启通知弹窗',
+      name: '全屏弹窗-开启通知弹窗',
       fastQuery: true,
       rules: [
         {

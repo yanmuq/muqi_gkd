@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '提示类',
+      name: '全屏弹窗',
       desc: '点击[开启定位]',
       matchTime: 20000,
       actionMaximum: 2,

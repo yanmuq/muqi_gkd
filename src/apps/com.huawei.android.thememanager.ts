@@ -123,12 +123,30 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '提示类-开启通知弹窗',
+      name: '全屏广告-开启通知弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] < * - * >n [text="开启消息通知"]',
       snapshotUrls: 'https://i.gkd.li/i/12918192',
+    },
+    {
+      key: 0,
+      name: '全屏弹窗-更新提示',
+      fastQuery: true,
+      matchTime: 5000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 5000,
+      enable: true,
+      rules: [
+        {
+          matches: '[id="android:id/button2"][text="以后再说"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/26204417',
+            ],
+        },
+      ],
     },
   ],
 });

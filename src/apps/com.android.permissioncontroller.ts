@@ -9,12 +9,11 @@ export default defineGkdApp({
       key: 0,
       enable: true,
       fastQuery: true,
-      //matchRoot: true,
       actionMaximum: 1,
       priorityTime: 1000,
       order: -10,
       matchDelay: 100,
-      matchTime: 3000,
+      matchTime: 5000,
       resetMatch: 'app',
       rules: [
         {
@@ -35,11 +34,9 @@ export default defineGkdApp({
       enable: true,
       fastQuery: true,
       actionMaximum: 1,
-      //matchRoot: true,
-      //priorityTime: 5000,
       order: -10,
-      matchDelay: 1000,
-      matchTime: 3000,
+      matchDelay: 1500,
+      matchTime: 5000,
       resetMatch: 'app',
       rules: [
         {
@@ -55,14 +52,11 @@ export default defineGkdApp({
     {
       name: '权限控制-录音允许本次',
       key: 2,
-      //enable: true,
       fastQuery: true,
       actionMaximum: 2,
-      //matchRoot: true,
-      //priorityTime: 5000,
       order: -10,
-      matchDelay: 800,
-      matchTime: 3000,
+      matchDelay: 1500,
+      matchTime: 5000,
       resetMatch: 'app',
       rules: [
         {
