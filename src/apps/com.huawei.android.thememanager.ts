@@ -131,7 +131,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12918192',
     },
     {
-      key: 0,
+      key: 10,
       name: '全屏弹窗-更新提示',
       fastQuery: true,
       matchTime: 5000,
