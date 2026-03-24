@@ -142,9 +142,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: '[id="android:id/button2"][text="以后再说"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/26204417',
-            ],
+          snapshotUrls: ['https://i.gkd.li/i/26204417'],
         },
       ],
     },
