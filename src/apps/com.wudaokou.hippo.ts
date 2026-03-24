@@ -29,7 +29,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.launcher.splash.SplashActivity',
           matches: [
-            '[id="com.wudaokou.hippo:id/btn_cancel"]',
+            '[id="com.wudaokou.hippo:id/btn_action"]',
             '[text="暂不开启"]',
           ],
           exampleUrls: 'https://e.gkd.li/bb758ce2-09c2-4e57-b418-a0196c1b38a4',
