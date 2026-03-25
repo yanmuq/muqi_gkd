@@ -29,18 +29,8 @@ https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/dist/gkd.json5
 ```
 ## 赞助
 
-如果这个项目对您有帮助，欢迎赞助我，感谢您的支持！
+如果这个项目对您有帮助，可以为项目打上星星，感谢您的支持！
 
-<table>
-  <tr>
-    <td align="center">支付宝</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/65eadb66-69d6-465a-b473-c95900e75d0f" width="300"/>
-    </td>
-  </tr>
-</table>
 
 ## 下为构建订阅相关文档，来自于gkd模板
 ## 配置环境
