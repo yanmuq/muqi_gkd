@@ -33,22 +33,24 @@ export default defineGkdApp({
       forcedTime: 5000,
       resetMatch: 'match',
       priorityTime: 5000,
-      actionDelay: 200,
+      actionDelay: 100,
       fastQuery: true,
+      exampleUrls: 'https://e.gkd.li/8f6c61d1-fe4d-4770-97ad-6769ec1ec1ba',
+      snapshotUrls: 'https://i.gkd.li/i/26278038',
       activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
       rules: [
         {
           key: 1,
           name: '勾选认证服务协议',
           matches:
-            '@MenuItem[checked=false] < View <2 View < WebView < bc < WebView',
+            '@MenuItem[checked=false] < View <2 View < WebView < bc < WebView < [vid="h5_pc_container"]',
         },
         {
           key: 2,
           name: '点击隐私权政策',
           preKeys: [1],
           matches:
-            '@MenuItem[checked=false] < View <3 View < WebView < bc < WebView',
+            '@MenuItem[checked=false] < View <3 View < WebView < bc < WebView < [vid="h5_pc_container"]',
         },
         {
           key: 3,
