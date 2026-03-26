@@ -36,23 +36,26 @@ export default defineGkdApp({
       actionDelay: 200,
       fastQuery: true,
       activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-      rules: [ 
+      rules: [
         {
           key: 1,
-          "name": "勾选认证服务协议",
-          "matches": "@MenuItem[checked=false] < View <2 View < WebView < bc < WebView",
+          name: '勾选认证服务协议',
+          matches:
+            '@MenuItem[checked=false] < View <2 View < WebView < bc < WebView',
         },
         {
           key: 2,
-          "name": "点击隐私权政策",
-          "preKeys": [1],
-          "matches": "@MenuItem[checked=false] < View <3 View < WebView < bc < WebView",
+          name: '点击隐私权政策',
+          preKeys: [1],
+          matches:
+            '@MenuItem[checked=false] < View <3 View < WebView < bc < WebView',
         },
         {
           key: 3,
-          "name": "点击下一步",
-          "preKeys": [1, 2],
-          matches: '@Button < View <4 View < WebView < bc < WebView < [vid="h5_pc_container"]',
+          name: '点击下一步',
+          preKeys: [1, 2],
+          matches:
+            '@Button < View <4 View < WebView < bc < WebView < [vid="h5_pc_container"]',
         },
       ],
     },
