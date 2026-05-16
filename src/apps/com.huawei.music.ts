@@ -18,7 +18,7 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/ee3f3184-0f9c-4b14-8ef2-ba0b3c63ccfc',
           snapshotUrls: [
             'https://i.gkd.li/i/15443502',
-            'https://i.gkd.li/i/27857853'
+            'https://i.gkd.li/i/27857853',
           ],
         },
       ],
@@ -34,9 +34,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: '[id="com.huawei.music:id/button_negative"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/27857933'
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/27857933'],
         },
       ],
     },
