@@ -13,8 +13,30 @@ export default defineGkdApp({
       priorityTime: 5000,
       rules: [
         {
-          matches: '[vid="hiad_skip_text"]',
-          snapshotUrls: 'https://i.gkd.li/i/15443502',
+          matches:
+            '[vid="hiad_skip_text" || id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          exampleUrls: 'https://e.gkd.li/ee3f3184-0f9c-4b14-8ef2-ba0b3c63ccfc',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15443502',
+            'https://i.gkd.li/i/27857853'
+          ],
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[id="com.huawei.music:id/button_negative"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/27857933'
+          ],
         },
       ],
     },

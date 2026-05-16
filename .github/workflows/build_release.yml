@@ -3,7 +3,7 @@ name: build_release
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 19 * * *' # 北京时间凌晨3:20运行（UTC时间为前一天的19:20）
+    - cron: '20 19 * * 2,6' # 北京时间周三、周日凌晨3:20运行（UTC时间为周二、周六19:20）
 
 jobs:
   check_changes:
