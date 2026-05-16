@@ -25,7 +25,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告-会员弹窗',
       desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,
