@@ -13,6 +13,7 @@ export default defineGkdApp({
       priorityTime: 5000,
       rules: [
         {
+          action: 'clickCenter',
           matches:
             '[vid="hiad_skip_text" || id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           exampleUrls: 'https://e.gkd.li/ee3f3184-0f9c-4b14-8ef2-ba0b3c63ccfc',
