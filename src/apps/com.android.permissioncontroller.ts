@@ -69,5 +69,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      name: '浏览器默认请求-拒绝',
+      key: 3,
+      fastQuery: true,
+      actionMaximum: 2,
+      order: -10,
+      //matchDelay: 1500,
+      matchTime: 5000,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            '([id="android:id/alertTitle"]) && (@[id="android:id/button2"])',
+          exampleUrls: 'https://e.gkd.li/a410fe77-1655-4516-866c-93f2b2662ce2',
+          snapshotUrls: 'https://i.gkd.li/i/28758818',
+        },
+      ],
+    },
   ],
 });
