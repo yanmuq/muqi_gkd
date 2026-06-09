@@ -70,7 +70,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '浏览器默认请求-拒绝',
+      name: '权限控制-拒绝默认浏览器请求',
       key: 3,
       fastQuery: true,
       actionMaximum: 2,
