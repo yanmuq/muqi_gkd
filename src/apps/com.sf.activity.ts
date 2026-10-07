@@ -7,17 +7,24 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏弹窗-通知权限弹窗',
-      desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
-      matchTime: 5000,
+      desc: '关闭开启消息通知弹窗',
+      matchRoot: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
           activityIds: ['com.sf.activity.MainActivity', '.MainActivity'],
-          matches:
-            '@ViewGroup[visibleToUser=true] < Button + [text="开启消息通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/21797717',
+          matches: '@*[visibleToUser=true] < Button + [text="开启消息通知"]',
+          action: 'clickCenter',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21797717',
+            'https://i.gkd.li/i/33155908',
+          ],
+          exampleUrls: [
+            'https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/assets/screenshots/21797717.png',
+            'https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/assets/screenshots/33155908.png',
+          ],
         },
       ],
     },
