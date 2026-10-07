@@ -9,6 +9,7 @@ export default defineGkdApp({
       name: '全屏弹窗-通知权限弹窗',
       desc: '关闭开启消息通知弹窗',
       matchRoot: true,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
