@@ -92,9 +92,14 @@ export default defineGkdApp({
         {
           matches:
             '@Button[vid="btn_cancel"] + Button[vid="qtd"] <n RelativeLayout > [text="美团App可升级至新版"]',
-          snapshotUrls: 'https://i.gkd.li/i/33159194',
-          exampleUrls:
+          snapshotUrls: [
+            'https://i.gkd.li/i/33159194',
+            'https://i.gkd.li/i/33552617',
+          ],
+          exampleUrls: [
             'https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/assets/screenshots/33159194.png',
+            'https://e.gkd.li/9bdfcd80-6bca-4449-857d-7cc43689e846',
+          ],
         },
       ],
     },
