@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 22
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
 
       - run: pnpm install
 
@@ -36,11 +36,17 @@ jobs:
           git config --local user.name github-actions[bot]
           git status --porcelain
           git --no-pager diff
-          git commit -a -m "chore(actions): check_format_lint"
-        continue-on-error: true
+          git add -u
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore(actions): check_format_lint"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Git push
         uses: ad-m/github-push-action@master
-        if: ${{ steps.commit.outcome == 'success' }}
+        if: ${{ steps.commit.outputs.changed == 'true' }}
         with:
           branch: ${{ github.ref }}
