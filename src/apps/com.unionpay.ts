@@ -29,6 +29,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 5000,
       actionMaximum: 1,
+      actionDelay: 500,
       forcedTime: 5000,
       resetMatch: 'match', // 规则因匹配时间到达而休眠后，重新匹配到activityId才会唤醒
       rules: [

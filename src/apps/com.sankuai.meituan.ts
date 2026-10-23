@@ -95,10 +95,12 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/33159194',
             'https://i.gkd.li/i/33552617',
+            'https://i.gkd.li/i/33872726',
           ],
           exampleUrls: [
             'https://raw.githubusercontent.com/yanmuq/muqi_gkd/main/assets/screenshots/33159194.png',
             'https://e.gkd.li/9bdfcd80-6bca-4449-857d-7cc43689e846',
+            'https://e.gkd.li/f7d4d114-5d24-47cf-8720-6a674c3d540f',
           ],
         },
       ],
