@@ -10,7 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 5000,
       priorityTime: 1000,
-      actionDelay: 2000, // 匹配后，延时 2 秒再执行对应操作
+      actionDelay: 500,
       resetMatch: 'match',
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
@@ -46,6 +46,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-开启通知弹窗',
       desc: '点击关闭',
+      actionDelay: 500,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -63,6 +64,7 @@ export default defineGkdApp({
       key: 13,
       name: '全屏广告-天天签到-获得新勋章提示',
       desc: '点击左上角返回',
+      actionDelay: 500,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -78,6 +80,7 @@ export default defineGkdApp({
       key: 15,
       name: '全屏广告-领取优惠弹窗',
       desc: '点击关闭',
+      actionDelay: 500,
       rules: [
         {
           fastQuery: true,
