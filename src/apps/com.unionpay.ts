@@ -15,6 +15,7 @@ export default defineGkdApp({
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
+          action: 'clickCenter',
           matches:
             '@[text.length=2] < ViewGroup[clickable=false] - [text="支付成功"]',
           snapshotUrls: 'https://i.gkd.li/i/13070564',
@@ -34,6 +35,7 @@ export default defineGkdApp({
       resetMatch: 'match', // 规则因匹配时间到达而休眠后，重新匹配到activityId才会唤醒
       rules: [
         {
+          action: 'clickCenter',
           activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
           matches: '@android.view.ViewGroup + TextView[text^="申卡限时"]',
           snapshotUrls: 'https://i.gkd.li/i/19408456',
@@ -53,6 +55,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          action: 'clickCenter',
           activityIds: '.base.UPDialog',
           matches:
             '[text="开启消息通知"] < * + [id="com.unionpay:id/view_alert_cancel"][visibleToUser=true]',
@@ -69,6 +72,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          action: 'clickCenter',
           activityIds: 'com.unionpay.cordova.UPActivityCordovaWeb',
           matches:
             'WebView[text="天天签到"] TextView[text="炫耀一下"] + TextView[clickable=true]',
@@ -83,6 +87,7 @@ export default defineGkdApp({
       actionDelay: 500,
       rules: [
         {
+          action: 'clickCenter',
           fastQuery: true,
           activityIds: 'com.unionpay.cordova.UPActivityCordovaWeb',
           matches:
