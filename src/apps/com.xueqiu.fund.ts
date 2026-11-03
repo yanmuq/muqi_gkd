@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-基金页面弹窗广告',
+      name: '持续-全屏广告-基金页面弹窗广告',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

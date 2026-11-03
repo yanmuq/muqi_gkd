@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: false,
       order: -10,
-      matchTime: 5000,
+      matchTime: 20000,
       forcedTime: 5000,
       resetMatch: 'app',
       priorityTime: 5000,
@@ -28,7 +29,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-同意认证',
+      name: '持续-功能操作-同意认证',
+      enable: false,
       matchTime: 5000,
       forcedTime: 5000,
       resetMatch: 'match',

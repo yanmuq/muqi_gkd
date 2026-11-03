@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 5000,
@@ -26,7 +27,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-“我的”页会员广告',
+      name: '持续-页面内广告-“我的”页会员广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.huawei.health.MainActivity',
@@ -37,7 +39,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -50,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-请求开启个性化推荐弹窗',
+      name: '持续-应用提示弹窗-请求开启个性化推荐弹窗',
+      enable: false,
       rules: [
         {
           activityIds: 'com.huawei.watchface.api.WebViewActivity',
@@ -61,7 +65,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-底部横幅广告',
+      name: '持续-页面内广告-底部横幅广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -73,7 +78,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-请求开启[实时推送步数]弹窗',
+      name: '持续-应用提示弹窗-请求开启[实时推送步数]弹窗',
+      enable: false,
       desc: '点击取消',
       rules: [
         {
@@ -94,10 +100,11 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
-      matchTime: 10000,
+      matchTime: 20000,
       resetMatch: 'app',
       rules: [
         {

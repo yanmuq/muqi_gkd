@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '权限控制器',
   groups: [
     {
-      name: '权限控制-相机允许本次',
+      name: '系统权限-相机允许本次',
       key: 0,
       enable: true,
       fastQuery: true,
@@ -29,7 +29,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '权限控制-位置允许本次',
+      name: '系统权限-位置允许本次',
       key: 1,
       enable: true,
       fastQuery: true,
@@ -50,7 +50,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '权限控制-录音允许本次',
+      name: '系统权限-录音允许本次',
       key: 2,
       fastQuery: true,
       actionMaximum: 2,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '权限控制-拒绝默认浏览器请求',
+      name: '系统权限-拒绝默认浏览器请求',
       key: 3,
       fastQuery: true,
       actionMaximum: 2,

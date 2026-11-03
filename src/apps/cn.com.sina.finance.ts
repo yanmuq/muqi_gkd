@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示-取消安装确认',
+      name: '限时-应用提示-取消安装确认',
+      enable: false,
       desc: '点击取消',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       // 当前仅处理取消安装后的二次确认弹窗。

@@ -6,10 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告-首页横幅',
+      name: '持续-页面内广告-首页横幅',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 5000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionCd: 86400000,

@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-Play保护机制弹窗',
+      name: '持续-应用提示弹窗-Play保护机制弹窗',
+      enable: false,
       desc: '点击[不发送]/[拒绝]',
       rules: [
         {
@@ -23,7 +24,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击[以后再说]/[不用了]',
       fastQuery: true,
       actionMaximum: 1,

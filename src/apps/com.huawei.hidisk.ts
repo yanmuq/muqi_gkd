@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-[升级云空间]弹窗',
+      name: '持续-全屏广告-[升级云空间]弹窗',
+      enable: false,
       desc: '点击[放弃]/[以后再说]/[关闭]',
       fastQuery: true,
       rules: [

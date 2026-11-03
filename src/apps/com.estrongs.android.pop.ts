@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -41,7 +42,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告',
+      name: '持续-页面内广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
       rules: [

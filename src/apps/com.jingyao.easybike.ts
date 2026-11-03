@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -21,9 +22,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-购卡弹窗',
+      name: '持续-全屏广告-购卡弹窗',
+      enable: false,
       desc: '点击仅付费',
-      matchTime: 5000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -37,9 +38,10 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '全屏弹窗-开启通知弹窗',
+      name: '限时-应用提示-开启通知弹窗',
+      enable: true,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -58,12 +60,12 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: [
@@ -79,7 +81,6 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds:
@@ -105,7 +106,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '局部广告-右侧悬浮广告',
+      name: '持续-页面内广告-右侧悬浮广告',
+      enable: false,
       fastQuery: true,
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:

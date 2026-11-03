@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 5000,
@@ -26,7 +27,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -48,7 +50,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -102,8 +105,9 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '全屏广告-首页活动弹窗',
-      matchTime: 10000,
+      name: '限时-全屏广告-首页活动弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -123,8 +127,9 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '全屏广告-开启通知弹窗',
-      matchTime: 10000,
+      name: '限时-应用提示-开启通知弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] < * - * >n [text="开启消息通知"]',
@@ -132,9 +137,9 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏弹窗-更新提示',
+      name: '限时-应用提示-更新提示',
       fastQuery: true,
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 5000,

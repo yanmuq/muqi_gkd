@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏弹窗',
+      name: '限时-应用提示-开启定位',
+      enable: true,
       desc: '点击[开启定位]',
       matchTime: 20000,
       actionMaximum: 2,

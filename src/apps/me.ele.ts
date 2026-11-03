@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
+      name: '持续-更新提示',
+      enable: false,
       fastQuery: true,
       // matchTime: 10000, 部分更新提示不在10s内
       actionMaximum: 1,
@@ -24,7 +25,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-红包弹窗',
+      name: '持续-全屏广告-红包弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -77,7 +79,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-活动弹窗',
+      name: '持续-全屏广告-活动弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -128,7 +131,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-付款后弹窗广告',
+      name: '持续-全屏广告-付款后弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -141,7 +145,8 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-吃货卡续费弹窗',
+      name: '持续-全屏广告-吃货卡续费弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -154,7 +159,8 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-首页底部浮窗广告',
+      name: '持续-页面内广告-首页底部浮窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -177,7 +183,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '功能类-定位局部提示',
+      name: '持续-应用提示弹窗-定位局部提示',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -199,10 +206,10 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '全屏广告-获取订单信息通知',
+      name: '持续-应用提示弹窗-获取订单信息通知',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -216,7 +223,8 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-底部调研邀请卡片',
+      name: '持续-应用提示弹窗-底部调研邀请卡片',
+      enable: false,
       desc: '点击关闭',
       actionMaximum: 1,
       resetMatch: 'app',

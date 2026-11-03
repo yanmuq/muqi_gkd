@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-还款免密弹窗',
+      name: '持续-应用提示弹窗-还款免密弹窗',
+      enable: false,
       desc: '关闭',
       rules: [
         {

@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: -1,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 2,
       resetMatch: 'app',
       priorityTime: 5000,
@@ -27,7 +28,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -55,7 +57,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-消息页面热门活动卡片',
+      name: '持续-页面内广告-消息页面热门活动卡片',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -70,7 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-悬浮广告',
+      name: '持续-页面内广告-悬浮广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -84,7 +88,8 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '全屏弹窗-开启通知弹窗',
+      name: '持续-应用提示弹窗-开启通知弹窗',
+      enable: true,
       desc: '点击关闭',
       order: -10,
       fastQuery: true,
@@ -111,8 +116,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      enable: true,
-      name: '更新提示',
+      enable: false,
+      name: '持续-更新提示',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -132,7 +137,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-关闭小额免密支付',
+      name: '持续-功能操作-关闭小额免密支付',
+      enable: false,
       desc: '在支付前/后出现',
       rules: [
         {
@@ -161,7 +167,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-将小组件添加到手机桌面',
+      name: '持续-应用提示弹窗-将小组件添加到手机桌面',
+      enable: false,
       desc: '点击取消',
       activityIds: 'com.alibaba.triver.container.TriverMainActivity',
       rules: [
@@ -174,7 +181,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-悬浮窗权限',
+      name: '持续-应用提示弹窗-悬浮窗权限',
+      enable: false,
       desc: '点击[否]',
       fastQuery: true,
       actionMaximum: 1,
@@ -190,7 +198,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '全屏广告-抢天降补贴弹窗',
+      name: '持续-全屏广告-抢天降补贴弹窗',
+      enable: false,
       desc: '点击X',
       rules: [
         {
@@ -203,7 +212,8 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '局部广告-商品详情页直播悬浮窗',
+      name: '持续-页面内广告-商品详情页直播悬浮窗',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,

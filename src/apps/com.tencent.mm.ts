@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '开屏广告-微信小程序',
+      name: '持续-小程序开屏广告-微信小程序',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       forcedTime: 10000,
@@ -35,7 +36,8 @@ export default defineGkdApp({
 
     {
       key: 30,
-      name: '全屏广告-文档页面-腾讯文档APP弹窗',
+      name: '持续-应用提示弹窗-文档页面-腾讯文档APP弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -51,7 +53,8 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '分段广告-订阅号消息-推荐阅读',
+      name: '持续-页面内广告-订阅号消息-推荐阅读',
+      enable: false,
       desc: '点击关闭',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',

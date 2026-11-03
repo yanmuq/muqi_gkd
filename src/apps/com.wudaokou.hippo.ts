@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏弹窗-更新弹窗',
-      matchTime: 10000,
+      name: '限时-应用提示-更新弹窗',
+      enable: true,
+      matchTime: 20000,
       resetMatch: 'app',
       rules: [
         {
@@ -21,8 +22,9 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏弹窗-开启通知',
-      matchTime: 10000,
+      name: '限时-应用提示-开启通知',
+      enable: true,
+      matchTime: 20000,
       resetMatch: 'app',
       rules: [
         {

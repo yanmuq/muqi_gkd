@@ -6,10 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏弹窗-兴趣推荐',
+      name: '限时-应用提示-兴趣推荐',
+      enable: true,
       desc: '点击[返回]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       resetMatch: 'app',
       rules: [
         {
@@ -22,7 +23,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '青少年弹窗',
+      name: '持续-应用提示弹窗-青少年弹窗',
+      enable: false,
       desc: '点击[不再提醒]',
       fastQuery: true,
       rules: [
@@ -37,10 +39,11 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏弹窗-完善信息弹窗',
+      name: '限时-应用提示-完善信息弹窗',
+      enable: true,
       desc: '点击[返回]',
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       resetMatch: 'app',
       rules: [
         {

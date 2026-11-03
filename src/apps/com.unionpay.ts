@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-支付完成页点完成',
+      name: '持续-功能操作-支付完成页点完成',
+      enable: false,
       fastQuery: true,
       matchTime: 5000,
       priorityTime: 1000,
@@ -24,9 +25,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-付款后信用卡广告',
+      name: '持续-全屏广告-付款后信用卡广告',
       desc: '2025-03-11由审查工具生成',
-      enable: true,
+      enable: false,
       fastQuery: true,
       matchTime: 5000,
       actionMaximum: 1,
@@ -46,11 +47,12 @@ export default defineGkdApp({
 
     {
       key: 12,
-      name: '全屏广告-开启通知弹窗',
+      name: '限时-应用提示-开启通知弹窗',
+      enable: false,
       desc: '点击关闭',
       actionDelay: 500,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -65,7 +67,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-天天签到-获得新勋章提示',
+      name: '持续-应用提示弹窗-天天签到-获得新勋章提示',
+      enable: false,
       desc: '点击左上角返回',
       actionDelay: 500,
       actionMaximum: 1,
@@ -82,7 +85,8 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '全屏广告-领取优惠弹窗',
+      name: '持续-全屏广告-领取优惠弹窗',
+      enable: false,
       desc: '点击关闭',
       actionDelay: 500,
       rules: [

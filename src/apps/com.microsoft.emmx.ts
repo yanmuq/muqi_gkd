@@ -6,8 +6,9 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-开启通知弹窗',
-      matchTime: 5000,
+      name: '限时-应用提示-开启通知弹窗',
+      enable: false,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -24,9 +25,10 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-评价弹窗',
+      name: '限时-应用提示-评价弹窗',
+      enable: false,
       desc: '关闭弹出窗口',
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,

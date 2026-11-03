@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-关闭花呗升级弹窗',
+      name: '持续-应用提示弹窗-关闭花呗升级弹窗',
+      enable: false,
       rules: [
         {
           key: 1,
@@ -41,7 +42,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏弹窗-开启通知弹窗',
+      name: '持续-应用提示弹窗-开启通知弹窗',
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -75,7 +77,8 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '全屏广告-借呗消费信贷协议',
+      name: '持续-应用提示弹窗-借呗消费信贷协议',
+      enable: false,
       desc: '点击X',
       rules: [
         {
@@ -89,7 +92,8 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-支付后自动点击完成',
+      name: '持续-功能操作-支付后自动点击完成',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -112,7 +116,8 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-弹窗广告',
+      name: '持续-全屏广告-弹窗广告',
+      enable: false,
       desc: '点击X',
       rules: [
         {
@@ -136,7 +141,8 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-"下次支付用花呗"弹窗',
+      name: '持续-全屏广告-"下次支付用花呗"弹窗',
+      enable: false,
       desc: '点击"30天不再提醒"',
       rules: [
         {
@@ -154,7 +160,8 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-关闭免密支付开关',
+      name: '持续-功能操作-关闭免密支付开关',
+      enable: false,
       actionMaximum: 1,
       rules: [
         {
@@ -174,7 +181,8 @@ export default defineGkdApp({
 
     {
       key: 21,
-      name: '局部广告-卡片广告',
+      name: '持续-页面内广告-卡片广告',
+      enable: false,
       desc: '点击关闭',
       fastQuery: true,
       rules: [
@@ -211,7 +219,8 @@ export default defineGkdApp({
     },
     {
       key: 22,
-      name: '其他-蚂蚁理财社区-[加入同路人]弹窗',
+      name: '持续-应用提示弹窗-蚂蚁理财社区-[加入同路人]弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {
@@ -229,10 +238,11 @@ export default defineGkdApp({
 
     {
       key: 24,
-      name: '开屏广告-小程序开屏广告',
+      name: '持续-小程序开屏广告',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
+      resetMatch: 'activity',
       priorityTime: 10000,
       rules: [
         {

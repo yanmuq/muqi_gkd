@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '功能类-付款后点击完成',
+      name: '持续-功能操作-付款后点击完成',
+      enable: false,
       fastQuery: true,
       matchRoot: true,
       actionMaximum: 1,
@@ -47,7 +48,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '功能类-骑行支付弹窗',
+      name: '持续-功能操作-骑行支付弹窗',
+      enable: false,
       matchRoot: true,
       rules: [
         {
@@ -83,9 +85,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

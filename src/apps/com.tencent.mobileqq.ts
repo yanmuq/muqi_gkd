@@ -6,9 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '限时-开屏广告',
+      enable: false,
       fastQuery: true,
-      matchTime: 5000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 5000,
@@ -34,7 +35,8 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-消息页面顶部横幅广告',
+      name: '持续-页面内广告-消息页面顶部横幅广告',
+      enable: false,
       desc: '点击关闭',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
@@ -78,9 +80,10 @@ export default defineGkdApp({
 
     {
       key: 17,
-      name: '更新提示',
+      name: '限时-应用提示-更新提示',
+      enable: false,
       fastQuery: true,
-      matchTime: 10000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -105,7 +108,8 @@ export default defineGkdApp({
 
     {
       key: 26,
-      name: '全屏广告-腾讯文档页面-"使用App"弹窗',
+      name: '持续-应用提示弹窗-腾讯文档页面-"使用App"弹窗',
+      enable: false,
       desc: '点击关闭',
       rules: [
         {

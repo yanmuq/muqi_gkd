@@ -6,7 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '全屏广告-设为默认',
+      name: '持续-应用提示弹窗-设为默认',
+      enable: false,
       desc: '不，谢谢',
       rules: [
         {
